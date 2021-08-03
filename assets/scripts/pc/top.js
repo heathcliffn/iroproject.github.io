@@ -22,14 +22,14 @@
 	// img preload
 	var imgArray		= [
 							'images/nav/nav_bg.png',
-							'hopeful-ptolemy-c3210d.netlify.app/assets/images/nav/navfix_bg.png',
-							'hopeful-ptolemy-c3210d.netlify.app/assets/images/nav/nav_scroll.png',
-							'hopeful-ptolemy-c3210d.netlify.app/assets/images/top/bg_main.png',
-							'hopeful-ptolemy-c3210d.netlify.app/assets/images/top/text_sound1.png',
-							'hopeful-ptolemy-c3210d.netlify.app/assets/images/top/text_sound2.png',
-							'hopeful-ptolemy-c3210d.netlify.app/assets/images/top/main_visual.jpg',
-							'hopeful-ptolemy-c3210d.netlify.app/assets/images/top/btn_movie_on.png',
-							'hopeful-ptolemy-c3210d.netlify.app/assets/images/outline_bg1.png'
+							'/assets/images/nav/navfix_bg.png',
+							'/assets/images/nav/nav_scroll.png',
+							'/assets/images/top/bg_main.png',
+							'/assets/images/top/text_sound1.png',
+							'/assets/images/top/text_sound2.png',
+							'/assets/images/top/main_visual.jpg',
+							'/assets/images/top/btn_movie_on.png',
+							'/assets/images/outline_bg1.png'
 						  ];
 	var imgOnReadyFlg	= false;
 	
