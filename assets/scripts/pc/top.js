@@ -5,7 +5,7 @@
 
 	// BGM
 	var bgm				= new Audio();
-		bgm.src			= 'hopeful-ptolemy-c3210d.netlify.app/assets/bgm/sound1.mp3';
+		bgm.src			= 'assets/bgm/sound1.mp3';
 		bgm.volume		= 0;
 		bgm.loop		= true;
 	var bgmVolume		= null; // setinterval
@@ -21,7 +21,7 @@
 	
 	// img preload
 	var imgArray		= [
-							'hopeful-ptolemy-c3210d.netlify.app/assets/images/nav/nav_bg.png',
+							'images/nav/nav_bg.png',
 							'hopeful-ptolemy-c3210d.netlify.app/assets/images/nav/navfix_bg.png',
 							'hopeful-ptolemy-c3210d.netlify.app/assets/images/nav/nav_scroll.png',
 							'hopeful-ptolemy-c3210d.netlify.app/assets/images/top/bg_main.png',
