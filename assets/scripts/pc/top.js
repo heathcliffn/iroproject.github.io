@@ -21,7 +21,7 @@
 	
 	// img preload
 	var imgArray		= [
-							'assets/images/nav/nav_bg.png',
+							'hopeful-ptolemy-c3210d/assets/images/nav/nav_bg.png',
 							'assets/images/nav/navfix_bg.png',
 							'assets/images/nav/nav_scroll.png',
 							'assets/images/top/bg_main.png',
