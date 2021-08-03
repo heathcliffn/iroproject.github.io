@@ -5,7 +5,7 @@
 
 	// BGM
 	var bgm				= new Audio();
-		bgm.src			= 'C:/Users/AincradHero/Desktop/IROproject/assets/bgm/sound1.mp3';
+		bgm.src			= 'assets/bgm/sound1.mp3';
 		bgm.volume		= 0;
 		bgm.loop		= true;
 	var bgmVolume		= null; // setinterval
@@ -21,15 +21,15 @@
 	
 	// img preload
 	var imgArray		= [
-							'C:/Users/AincradHero/Desktop/IROproject/assets/images/nav/nav_bg.png',
-							'C:/Users/AincradHero/Desktop/IROproject/assets/images/nav/navfix_bg.png',
-							'C:/Users/AincradHero/Desktop/IROproject/assets/images/nav/nav_scroll.png',
-							'C:/Users/AincradHero/Desktop/IROproject/assets/images/top/bg_main.png',
-							'C:/Users/AincradHero/Desktop/IROproject/assets/images/top/text_sound1.png',
-							'C:/Users/AincradHero/Desktop/IROproject/assets/images/top/text_sound2.png',
-							'C:/Users/AincradHero/Desktop/IROproject/assets/images/top/main_visual.jpg',
-							'C:/Users/AincradHero/Desktop/IROproject/assets/images/top/btn_movie_on.png',
-							'C:/Users/AincradHero/Desktop/IROproject/assets/images/outline_bg1.png'
+							'assets/images/nav/nav_bg.png',
+							'assets/images/nav/navfix_bg.png',
+							'assets/images/nav/nav_scroll.png',
+							'assets/images/top/bg_main.png',
+							'assets/images/top/text_sound1.png',
+							'assets/images/top/text_sound2.png',
+							'assets/images/top/main_visual.jpg',
+							'assets/images/top/btn_movie_on.png',
+							'assets/images/outline_bg1.png'
 						  ];
 	var imgOnReadyFlg	= false;
 	
