@@ -5,7 +5,7 @@
 
 	// BGM
 	var bgm				= new Audio();
-		bgm.src			= 'hopeful-ptolemy-c3210d.netlify.app//assets/bgm/sound1.mp3';
+		bgm.src			= 'hopeful-ptolemy-c3210d.netlify.app/assets/bgm/sound1.mp3';
 		bgm.volume		= 0;
 		bgm.loop		= true;
 	var bgmVolume		= null; // setinterval
