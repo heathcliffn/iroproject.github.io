@@ -54,7 +54,7 @@ input, label { cursor: pointer; }
 
 html { font-size: 14px; }
 
-body { background-color: #000; font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; color: #fff; position: relative; min-width: 1024px; font-size: 14px; font-size: 1rem; line-height: 1.8em; }
+body { background-color: #000; font-family: "Bahnschrift SemiBold", sans-serif; color: #fff; position: relative; min-width: 1024px; font-size: 14px; font-size: 1rem; line-height: 1.8em; }
 body a { display: inline-block; color: #fff; text-decoration: underline; -moz-transition: all 200ms; -o-transition: all 200ms; -webkit-transition: all 200ms; transition: all 200ms; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
 body a:hover { text-decoration: none; }
 body a.hover:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity: 0.6; }
