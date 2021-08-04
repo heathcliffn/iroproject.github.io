@@ -276,9 +276,9 @@ var _effectApp = {root:null};
 		this.noizArr = [];
 
 		var imgsLoad = [];
-		imgsLoad.push("/assets/images/canvas_bg/noiz_top.png");
-		imgsLoad.push("/assets/images/canvas_bg/noiz_bottom.png");
-		imgsLoad.push("/assets/images/canvas_bg/txt_prolog.png");
+		imgsLoad.push("noiz_top.png");
+		imgsLoad.push("noiz_bottom.png");
+		imgsLoad.push("txt_prolog.png");
 		this.imgsLoadTotal = imgsLoad.length;
 		this.loadImgCount = 0;
 		this.loadImgs = [];
