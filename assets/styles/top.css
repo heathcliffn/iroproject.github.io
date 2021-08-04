@@ -183,7 +183,7 @@
 #contents h2 { margin-bottom: 40px; text-align: center; }
 #contents h3 { text-align: center; }
 
-.message-container { width: 100%; height: 2025px; position: relative; }
+.message-container { width: 100%; height: 1025px; position: relative; }
 .message-container #glitchBgList { position: absolute; z-index: 0; width: 2000px; height: 1304px; margin-left: -1000px; left: 50%; }
 .message-container #glitchBgList ul { position: relative; width: 2000px; height: 1304px; }
 .message-container #glitchBgList ul li { position: absolute; top: 0; left: 0; }
