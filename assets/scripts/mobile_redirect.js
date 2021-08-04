@@ -3,7 +3,7 @@
 
   var mobileDirName = 'sp';
   //var siteDomain = location.host;
-  var siteDomain = location.host + 'ifrontier.netlify.app/';
+  var siteDomain = location.host + '';
   //var path = location.pathname;
   var path = (location.pathname).replace( /\/ifrontier.netlify.app/g , "" ) ;
   var paramater = location.search;
