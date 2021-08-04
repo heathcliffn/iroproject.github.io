@@ -136,7 +136,7 @@ var _effectApp = {root:null};
 			img.parent = this;
 			//img.crossOrigin = "anonymous";
 			img.onload = this.imgLoad;
-			img.src = 'assets/images/canvas_bg/note/' + imgsLoad[i];
+			img.src = '/assets/images/canvas_bg/note/' + imgsLoad[i];
 			this.loadImgs.push(img);
 		}
 	};
@@ -287,7 +287,7 @@ var _effectApp = {root:null};
 			img.parent = this;
 			//img.crossOrigin = "anonymous";
 			img.onload = this.imgLoad;
-			img.src = 'assets/images/canvas_bg/' + imgsLoad[i];
+			img.src = '/assets/images/canvas_bg/' + imgsLoad[i];
 			this.loadImgs.push(img);
 		}
 	};
