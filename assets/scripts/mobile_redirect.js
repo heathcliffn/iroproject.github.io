@@ -5,7 +5,7 @@
   //var siteDomain = location.host;
   var siteDomain = location.host + 'ifrontier.netlify.app/';
   //var path = location.pathname;
-  var path = (location.pathname).replace( /\/ifrontier.netlify.app//g , "" ) ;
+  var path = (location.pathname).replace( /\/ifrontier.netlify.app/g , "" ) ;
   var paramater = location.search;
   var hash = location.hash;
   var redirectUri = null;
