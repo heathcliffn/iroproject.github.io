@@ -1,16 +1,11 @@
-/**
- * PC/Tablet/Mobile 判別リダイレクト
- * 
- * example.com に対しモバイルページは example.com/sp/ とした場合を想定。
- * モバイルページのディレクトリ名変更やタブレット向けの処理が必要な場合は編集して使用すること。
- */
+
 (function () {
 
   var mobileDirName = 'sp';
   //var siteDomain = location.host;
-  var siteDomain = location.host + '/vrmmo-project';
+  var siteDomain = location.host + 'ifrontier.netlify.app/';
   //var path = location.pathname;
-  var path = (location.pathname).replace( /\/vrmmo-project/g , "" ) ;
+  var path = (location.pathname).replace( /\/ifrontier.netlify.app//g , "" ) ;
   var paramater = location.search;
   var hash = location.hash;
   var redirectUri = null;
