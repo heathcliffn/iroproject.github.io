@@ -289,7 +289,7 @@
 #prologue_text #scrollbox .noSelect { -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; }
 #prologue_text .inner { padding: 150px 0; position: initial; }
 #prologue_text h2 { margin-bottom: 80px; text-align: center; }
-#prologue_text p { padding: 0 66px; font-size: 20px; font-size: 1.42857rem; line-height: 2.2em; font-family: "游明朝","YuMincho","Hiragino Mincho ProN","Hiragino Mincho Pro","ＭＳ 明朝",serif; }
+#prologue_text p { padding: 0 66px; font-size: 20px; font-size: 1.42857rem; line-height: 2.2em; font-family: "Bahnschrift SemiBold",serif; }
 #prologue_text .close_top { position: absolute; right: 120px; top: 58px; width: 42px; height: 36px; padding: 0; }
 #prologue_text .close_top a { display: block; text-align: left; text-indent: -99999px; overflow: hidden; display: block; width: 42px; height: 36px; position: relative; overflow: hidden; -moz-transition: all 400ms; -o-transition: all 400ms; -webkit-transition: all 400ms; transition: all 400ms; }
 #prologue_text .close_top a:before, #prologue_text .close_top a:after { content: ''; position: absolute; width: 54px; height: 4px; background: #000; left: -6px; top: 16px; }
@@ -322,7 +322,7 @@
 #epilogue_text #scrollbox2 .noSelect { -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; }
 #epilogue_text .inner { padding: 150px 0; position: initial; }
 #epilogue_text h2 { margin-bottom: 80px; text-align: center; }
-#epilogue_text p { padding: 0 66px; font-size: 20px; font-size: 1.42857rem; line-height: 2.2em; font-family: "游明朝","YuMincho","Hiragino Mincho ProN","Hiragino Mincho Pro","ＭＳ 明朝",serif; }
+#epilogue_text p { padding: 0 66px; font-size: 20px; font-size: 1.42857rem; line-height: 2.2em; font-family: "Bahnschrift SemiBold",serif; }
 #epilogue_text .close_top { position: absolute; right: 120px; top: 58px; width: 42px; height: 36px; padding: 0; }
 #epilogue_text .close_top a { display: block; text-align: left; text-indent: -99999px; overflow: hidden; display: block; width: 42px; height: 36px; position: relative; overflow: hidden; -moz-transition: all 400ms; -o-transition: all 400ms; -webkit-transition: all 400ms; transition: all 400ms; }
 #epilogue_text .close_top a:before, #epilogue_text .close_top a:after { content: ''; position: absolute; width: 54px; height: 4px; background: #000; left: -6px; top: 16px; }
