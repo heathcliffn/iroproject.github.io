@@ -1,7 +1,7 @@
 
 (function () {
 
-  var mobileDirName = 'sp';
+  var mobileDirName = '';
   //var siteDomain = location.host;
   var siteDomain = location.host + '';
   //var path = location.pathname;
@@ -39,13 +39,12 @@
       redirectPath = path.substr(mobileDirName.length+1);
       redirectUri = '//' + siteDomain + redirectPath + paramater;
       
-      // リファラー引継ぎ（ga関数別途設置必要あり）
+      
       if (document.referrer) {
         referrer = 'referrer=' + encodeURIComponent(document.referrer);
         redirectUri = redirectUri + (paramater ? '&' : '?') + referrer;
       }
           
-      //ハッシュありの場合
       if (hash) {
         redirectUri = redirectUri + hash;
       }
@@ -60,13 +59,13 @@
       redirectPath = '/' + mobileDirName + path;
       redirectUri = '//' + siteDomain + redirectPath + paramater;
       
-      // リファラー引継ぎ（ga関数別途設置必要あり）
+  
       if (document.referrer) {
         referrer = 'referrer=' + encodeURIComponent(document.referrer);
         redirectUri = redirectUri + (paramater ? '&' : '?') + referrer;
       }
           
-      //ハッシュありの場合
+  
       if (hash) {
         redirectUri = redirectUri + hash;
       }
