@@ -187,12 +187,6 @@
 .message-container #glitchBgList { position: absolute; z-index: 0; width: 2000px; height: 1304px; margin-left: -1000px; left: 50%; }
 .message-container #glitchBgList ul { position: relative; width: 2000px; height: 1304px; }
 .message-container #glitchBgList ul li { position: absolute; top: 0; left: 0; }
-.message-container #canvasBg { position: absolute; z-index: 0; bottom: 0px; }
-.message-container #prologue { background: transparent; padding: 0; }
-.message-container #prologue .inner { height: 972px; }
-.message-container #prologue .inner h2 { display: none; }
-.message-container #prologue .inner .text { display: none; }
-.message-container #prologue .inner .read { margin-top: 652px; }
 
 #special { padding: 80px 0 20px; font-size: 16px; font-size: 1.14286rem; background : -webkit-gradient(linear, left top, left bottom, from(rgba(0,122,195,0.5)), to(rgba(104,108,221,0.5))); background : -webkit-linear-gradient(left, rgba(0,122,195,0.5), rgba(104,108,221,0.5)); background : linear-gradient(to right, rgba(0,122,195,0.5), rgba(104,108,221,0.5)); }
 #special .mugendai { padding: 0 0 15px; text-align:center; }
