@@ -183,16 +183,10 @@
 #contents h2 { margin-bottom: 40px; text-align: center; }
 #contents h3 { text-align: center; }
 
-.message-container { width: 100%; height: 2025px; position: relative; }
+.message-container { width: 100%; height: 1025px; position: relative; }
 .message-container #glitchBgList { position: absolute; z-index: 0; width: 2000px; height: 1304px; margin-left: -1000px; left: 50%; }
 .message-container #glitchBgList ul { position: relative; width: 2000px; height: 1304px; }
 .message-container #glitchBgList ul li { position: absolute; top: 0; left: 0; }
-.message-container #canvasBg { position: absolute; z-index: 0; bottom: 0px; }
-.message-container #prologue { background: transparent; padding: 0; }
-.message-container #prologue .inner { height: 972px; }
-.message-container #prologue .inner h2 { display: none; }
-.message-container #prologue .inner .text { display: none; }
-.message-container #prologue .inner .read { margin-top: 652px; }
 
 #special { padding: 80px 0 20px; font-size: 16px; font-size: 1.14286rem; background : -webkit-gradient(linear, left top, left bottom, from(rgba(0,122,195,0.5)), to(rgba(104,108,221,0.5))); background : -webkit-linear-gradient(left, rgba(0,122,195,0.5), rgba(104,108,221,0.5)); background : linear-gradient(to right, rgba(0,122,195,0.5), rgba(104,108,221,0.5)); }
 #special .mugendai { padding: 0 0 15px; text-align:center; }
@@ -220,8 +214,6 @@
 #prologue { text-align: center; background: #fff color: #000; padding: 140px 0; }
 #prologue .read { margin-top: -50px; }
 #prologue .read a { position: relative; }
-#prologue:before{ content:""; display:block; position:absolute; top:+1100px; background:url(/assets/images/canvas_bg/noiz_top.png) repeat-x center top; height: 127px; width: 100%; }
-#prologue:after{ content:""; display:block; position:absolute; bottom:+50px; background:url(/assets/images/canvas_bg/noiz_bottom.png) repeat-x center top; height: 127px; width: 100%; }
 #prologue .read a:after { content: ''; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background: url(/assets/images/top/btn_read_on.png) no-repeat left top; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -moz-transition: all 200ms; -o-transition: all 200ms; -webkit-transition: all 200ms; transition: all 200ms; }
 #prologue .read a:hover:after { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
 
