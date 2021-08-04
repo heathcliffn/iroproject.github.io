@@ -41,7 +41,7 @@ var _effectApp = {root:null};
 
 		var noizFlg = false;
 		self.glitchMoveFlg = false;
-		//--- スクロール ---
+		
 		self.window.on('scroll', function(e){
 			var acScNum = self.window.scrollTop();
 			if(acScNum < 50)
@@ -276,9 +276,9 @@ var _effectApp = {root:null};
 		this.noizArr = [];
 
 		var imgsLoad = [];
-		imgsLoad.push("noiz_top.png");
-		imgsLoad.push("noiz_bottom.png");
-		imgsLoad.push("txt_prolog.png");
+		imgsLoad.push("/assets/images/canvas_bg/noiz_top.png");
+		imgsLoad.push("/assets/images/canvas_bg/noiz_bottom.png");
+		imgsLoad.push("/assets/images/canvas_bg/txt_prolog.png");
 		this.imgsLoadTotal = imgsLoad.length;
 		this.loadImgCount = 0;
 		this.loadImgs = [];
@@ -488,9 +488,7 @@ var _effectApp = {root:null};
 		_effectApp.root.stage.update();
 	}
 
-	/********************************
-	          レンダリング処理
-	********************************/
+	
 	Index.prototype.handleTick = function() 
 	{
 		_effectApp.root.stage.update();
