@@ -1,9 +1,9 @@
 
 (function () {
 
-  var mobileDirName = 'sp';
+  var mobileDirName = '';
   //var siteDomain = location.host;
-  var siteDomain = location.host + 'ifrontier.netlify.app/';
+  var siteDomain = location.host + '';
   //var path = location.pathname;
   var path = (location.pathname).replace( /\/ifrontier.netlify.app/g , "" ) ;
   var paramater = location.search;
@@ -39,13 +39,12 @@
       redirectPath = path.substr(mobileDirName.length+1);
       redirectUri = '//' + siteDomain + redirectPath + paramater;
       
-      // リファラー引継ぎ（ga関数別途設置必要あり）
+      
       if (document.referrer) {
         referrer = 'referrer=' + encodeURIComponent(document.referrer);
         redirectUri = redirectUri + (paramater ? '&' : '?') + referrer;
       }
           
-      //ハッシュありの場合
       if (hash) {
         redirectUri = redirectUri + hash;
       }
@@ -60,13 +59,13 @@
       redirectPath = '/' + mobileDirName + path;
       redirectUri = '//' + siteDomain + redirectPath + paramater;
       
-      // リファラー引継ぎ（ga関数別途設置必要あり）
+  
       if (document.referrer) {
         referrer = 'referrer=' + encodeURIComponent(document.referrer);
         redirectUri = redirectUri + (paramater ? '&' : '?') + referrer;
       }
           
-      //ハッシュありの場合
+  
       if (hash) {
         redirectUri = redirectUri + hash;
       }
