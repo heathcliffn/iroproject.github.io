@@ -179,7 +179,7 @@
 #top_nav .sound a, #fix_nav .sound a { display: block; line-height: 0; height: 21px; }
 #top_nav .sound .active, #fix_nav .sound .active { display: block; }
 
-#contents { position: relative; background: url(/assets/images/top/bg_main.jpg) repeat-y center top; }
+#contents { position: relative; background: url(/assets/images/top/bg_main.ong) repeat-y center top; }
 #contents h2 { margin-bottom: 40px; text-align: center; }
 #contents h3 { text-align: center; }
 
