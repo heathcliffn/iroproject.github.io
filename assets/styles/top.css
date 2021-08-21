@@ -317,7 +317,7 @@
 #tuhai_text p { padding: 0 66px; font-size: 20px; font-size: 1.42857rem; line-height: 2.2em; font-family: "Bahnschrift SemiBold",serif; }
 #tuhai_text .close_top { position: absolute; right: 120px; top: 58px; width: 42px; height: 36px; padding: 0; }
 #tuhai_text .close_top a { display: block; text-align: left; text-indent: -99999px; overflow: hidden; display: block; width: 42px; height: 36px; position: relative; overflow: hidden; -moz-transition: all 400ms; -o-transition: all 400ms; -webkit-transition: all 400ms; transition: all 400ms; }
-#tuhai_text .close_top a:before, #epilogue_text .close_top a:after { content: ''; position: absolute; width: 54px; height: 4px; background: #000; left: -6px; top: 16px; }
+#tuhai_text .close_top a:before, #tuhai_text .close_top a:after { content: ''; position: absolute; width: 54px; height: 4px; background: #000; left: -6px; top: 16px; }
 #tuhai_text .close_top a:before { -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
 #tuhai_text .close_top a:after { -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
 #tuhai_text .close_top a:hover { -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
