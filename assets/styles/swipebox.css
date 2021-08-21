@@ -215,7 +215,7 @@ html.swipebox-html.swipebox-touch {
   opacity: 1;
 }
 
-@-webkit-keyframes rightSpring {
+@keyframes rightSpring {
   0% {
     left: 0;
   }
@@ -242,7 +242,7 @@ html.swipebox-html.swipebox-touch {
     left: 0;
   }
 }
-@-webkit-keyframes leftSpring {
+@keyframes leftSpring {
   0% {
     left: 0;
   }
@@ -279,7 +279,7 @@ html.swipebox-html.swipebox-touch {
   }
 }
 
---------------------------*/
+
 #swipebox-overlay {
   background: #0d0d0d;
 }
