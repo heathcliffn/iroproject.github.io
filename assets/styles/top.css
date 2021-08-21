@@ -200,10 +200,10 @@
 #special .previous .post .clm .clm-img { width: 100%; height: auto; }
 #special .previous .post .clm .clm-num { position: absolute; top: 0; left: 0; width: 50px; height: 50px; line-height: 50px; font-size: 1.66em; color: #fff; text-align: center; font-weight: bold; background : -webkit-gradient(linear, left top, left bottom, from(rgba(0,122,195,1)), to(rgba(104,108,221,1))); background : -webkit-linear-gradient(left, rgba(0,122,195,1), rgba(104,108,221,1)); background : linear-gradient(to right, rgba(0,122,195,1), rgba(104,108,221,1)); }
 #special .previous .post .clm .mugendai-logo { position: absolute; top: 0; right: 0; width: 50px; height: 50px; }
-#special .previous .post .summary { width: 306px; height: auto; position: relative; padding: 0; box-sizing: border-box; background-color: #000; }
-#special .previous .post .summary a{ display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-#special .previous .post .summary h3 { padding: 10px; line-height:1.25em; text-align:left; font-weight: bold; color: #fff; min-height:5em; }
-#special .previous .post .summary .entry-date { padding: 0 10px 10px 0; color: #fff; font-size: 0.84em; text-align: right; font-family: "Bahnschrift SemiBold", sans-serif; }
+#special .previous .post .ehpost { width: 306px; height: auto; position: relative; padding: 0; box-sizing: border-box; background-color: #000; }
+#special .previous .post .ehpost a{ display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+#special .previous .post .ehpost h3 { padding: 10px; line-height:1.25em; text-align:left; font-weight: bold; color: #fff; min-height:5em; }
+#special .previous .post .ehpost .on-sar { padding: 0 10px 10px 0; color: #fff; font-size: 0.84em; text-align: right; font-family: "Bahnschrift SemiBold", sans-serif; }
 #special .previous .post .comming { width: 306px; height: 330px; background-color: rgba(255,255,255,0.33); }
 #special .previous .post .comming p { color: #fff; text-align: center; padding: 150px 0; }
 #special .prevline { width: 100%; height: 13px; border:none; background-image: url(/assets/images/top/line_quadruple.png); background-repeat: repeat-x; background-position: bottom left; clear: both; }
@@ -335,9 +335,9 @@
 #about .movie_block{ width:770px; margin:20px auto;}
 #about p.block_right{ width:380px; margin:0 0 0 390px;}
 #about .block_left{ width:360px; float:left;}
-#about .about_ibm{ background-color:#00222f; padding:25px; text-align:center;}
-#about .about_ibm .ibm_logo{ margin:20px auto;}
-#about .about_ibm p{ width:770px; margin:0 auto;}
+#about .greensoft{ background-color:#00222f; padding:25px; text-align:center;}
+#about .greensoft .greensoft_logo{ margin:20px auto;}
+#about .greensoft p{ width:770px; margin:0 auto;}
 #outline.section .unit{ width:750px; font-size:14px;}
 #outline h3{ margin:20px auto;}
 #outline .chara_kirito{ position:relative; padding-bottom:50px;}

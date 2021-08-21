@@ -138,4 +138,4 @@ body .inner { width: 960px; margin: 0 auto; position: relative; padding: 40px 0;
 #pagetop p a:hover:after { width: 26px; margin-left: -13px; }
 
 #footer:after { content:""; display:block; width:100%; height:30px; position:absolute; bottom:-25px; background: url(/assets/images/footer_bg_bottom.png) repeat-x bottom center; }
-.mugenai_link{ background-color:#FFF; padding:35px 20px 20px; margin:0 auto; text-align:center;}
+.holboos{ background-color:#FFF; padding:35px 20px 20px; margin:0 auto; text-align:center;}
