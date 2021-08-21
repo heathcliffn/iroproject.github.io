@@ -36,7 +36,7 @@
 	// loading
 	var onloadTimer		= null; // setinterval
 
-	// ローディングアニメーション
+
 	var loadingCogu		= null;
 	var loadingCoguW	= 120;
 	var loadingCoguH	= 120;
@@ -52,7 +52,7 @@
 	var firstScriptTag = document.getElementsByTagName('script')[0];
 	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 	
-	// youtube 準備
+
 	function onYouTubeIframeAPIReady() {
 		ytPlayer = new YT.Player(
 			'youtube', // 埋め込む場所の指定
@@ -61,7 +61,7 @@
 				height		: 520,
 				videoId		: 'FTo7xMiDQ8A',
 				playerVars	: {
-					//modestbranding:1,
+					modestbranding:1,
 					rel		: 0,
 					showinfo: 0
 				},
@@ -69,23 +69,23 @@
 					'onReady': function(){
 						ytOnReadyFlg = true;
 
-						// 画像を読み込む
+					
 						imgPreload();
 
-						//console.log('youtube読み込み完了');
+						console.log('youtube読み込み完了');
 					},
 					'onStateChange': function onPlayerStateChange(event) {
 						var ytStatus = event.data;
 						
-						// 再生開始したら
+				
 						if( ytStatus == YT.PlayerState.PLAYING && ytIsOpening == true ) {
 							youtubeGetStatus();
 						}
-						// 停止されたら
+					
 						if( ytStatus ==  YT.PlayerState.PAUSED && ytIsOpening == true ) {
 							clearInterval(ytGetStatus);
 						}
-						// 再生終了したとき
+					
 						if ( ytStatus == YT.PlayerState.ENDED ) {
 							youtubePlayEnd();
 						}
@@ -95,56 +95,49 @@
 		);
 	}
 	
-	// youtube 再生時間を取得
+
 	function youtubeGetStatus() {
 		
 		ytGetStatus = setInterval(function(){
-			//console.log(ytPlayer.getCurrentTime());
+			console.log(ytPlayer.getCurrentTime());
 			if( ytPlayer.getCurrentTime() >= 191.5 ) {
 				clearInterval(ytGetStatus);
 				setTimeout(function(){
 					youtubePlayEnd();
-					//console.log('動画閉じる');
+					console.log('');
 				},1);
-				//console.log('動画ストップ');
+				console.log('');
 			}
 		},100);
 	}
 	
-	// youtube 再生完了時
+
 	function youtubePlayEnd() {
 		
 		if ( ytIsOpening == true ) {
 			ytIsOpening	= false;
 			ytPlayer.pauseVideo();
 			if( $.cookie('sound_switch_flg') == undefined ) {
-				$('#movie').fadeOut(intervalTime,function(){
+				$('#taniltsuulga_video').fadeOut(intervalTime,function(){
 					$('#sound_select').fadeIn(intervalTime);
 				});
 			} else {
-				showTop($('#movie'));
+				showTop($('#taniltsuulga_video'));
 			}
 		}
 	
 	}
-	
-// scroll 制御 ******************************************************************************
 
-	//スクロール禁止用
 	function noScroll(){
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).on(scroll_event,function(e){e.preventDefault();});
 	}
-	
-	//スクロール復活用
+
 	function returnScroll(){
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).off(scroll_event);
 	}
 
-// BGM 制御 *********************************************************************************
-
-	// 読み込み開始→読み込み完了かどうか
 	function soundBGMload() {
 		bgm.load();
 		bgmOnReady = setInterval(function(){
@@ -156,7 +149,7 @@
 		},1);
 	}
 	
-	// 再生
+
 	function soundBGMplay() {
 		bgm.play();
 		bgmVolume = setInterval(function(){
@@ -171,7 +164,7 @@
 		},1000/60);
 	}
 	
-	// 停止
+
 	function soundBGMstop() {
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
@@ -186,8 +179,7 @@
 			}
 		},1000/120);
 	}
-	
-// 画像のプリロード 制御 ******************************************************************************
+
 
 	function imgPreload() {
 		var count = 0;
@@ -209,9 +201,6 @@
 		}
 	}
 
-// soundボタン & cookie 制御 **************************************************************************
-	
-	// bgm on off 切り替えcookie保存
 	function soundStatusChange(obj) {
 		var switchState = obj.data('switch'); 
 
@@ -228,16 +217,16 @@
 			return;
 
 		}
-		//console.log('音量選択変更：無効');
+
 	}
 	
-	// bgmを再生切り替える
+
 	function soundBGMChange() {
 
 		if( $.cookie('sound_switch_flg') != undefined ) {
 			if( $.cookie('sound_switch_flg') == 'on' ) {
 
-				//console.log('BGM再生');
+			
 
 				$('.navigation .sound li').removeClass('active');
 				$('.navigation .sound li.on').addClass('active');
@@ -253,23 +242,19 @@
 				$('.navigation .sound li').removeClass('active');
 				$('.navigation .sound li.off').addClass('active');
 
-				//console.log('BGM停止');
 				clearInterval(bgmVolume);
 				soundBGMstop();
 				
 				return;
 
 			}
-			//console.log('sound_switch_flg：error');
+		
 			return;
 		}
-		//console.log('cookie値なし');
+	
 		
 	}
 
-// 初期処理 ******************************************************************************
-
-	// ローディングアニメーション
 	function loadingAnimation() {
 		
 		loadingCoguAnime = setInterval(function(){
@@ -282,7 +267,7 @@
 	
 	}
 
-	//初回load時
+	
 	function int() {
 		
 		var count	= 0;
@@ -297,38 +282,35 @@
 
 			count++;
 
-			// 読み込み完了後、loadingを消して動画を表示
 			if( bgmOnReadyFlg == true && ytOnReadyFlg == true && imgOnReadyFlg == true ) {
 				
-				//onloadTimer終了
+			
 				clearInterval(onloadTimer);
-				//effect読み込み
+			
 				_effectApp.root.init(intLoadComplete);
 			}
 			
 			if( count >= maxTime ) {
 				intLoadComplete();
-				//console.log('uncomplete');
+		
 			}
 			
 		},100);
 		
 	}
 
-	//effect読み込み完了時の指定したcallback
+	
 	function intLoadComplete() {
 
-		//ローディングのアニメーションの終了
 		clearInterval(loadingCoguAnime);
-		
-		//console.log('complete');
+	
 		$('#loading').fadeOut(intervalTime, function(){
 			ytPlayer.playVideo();
 			ytPlayer.getCurrentTime();
 		});
 	}	
 	
-	// メインビジュアル表示
+
 	function showTop(beforeTarget) {
 		
 		$('#header_top .mainvisual .layer1').css({ 'opacity' : 1, 'visibility' : 'visible' });
@@ -340,10 +322,9 @@
 		
 	}
 	
-	// load済の場合の表示
 	function intLoaded() {
-		// 下層読み込み済 ローディングを表示しない
-		$('#loading, #movie, #overlay').hide();
+	
+		$('#loading, #taniltsuulga_video, #overlay').hide();
 		$('#btn_skip').removeClass('avtive').hide();
 		ytIsOpening	= false;
 		$('#btn_movie_close').show();
@@ -363,11 +344,10 @@
 	
 	$(function(){
 		
-		// 変数 ***************************************************************************************
-		
+	
 			var _window			= $(window);
 			
-			// パララックス用
+			
 			var _windowHeight	= _window.height();
 			var _para1			= $('#line1');
 			var _para1Obj		= $('#line1 .para_inner');
@@ -376,13 +356,13 @@
 			var _para2Obj		= $('#line2 .para_inner');
 			var _para2Top		= _para2.offset().top - _windowHeight - 100;
 			
-			// fix ナビ
+			
 			var _top_nav		= $('#top_nav');
 			var _top_navTop		= _top_nav.offset().top + 73;
 			var _fix_nav		= $('#fix_nav');
 					
-			// アスナ背景
-			var asunaBg			= $('#bg_asuna img');
+			
+			var asunaBg			= $('#zuun img');
 			var asunaBgW		= 450;
 			var asunaBgH		= 1400;
 			var asunaFrame		= 0;
@@ -391,55 +371,51 @@
 			var asunaMaxframe	= 55;
 			var asunaBgAnime	= null; //setInterval
 			
-			// キリト背景
-			var kiritoBg		= $('#bg_kirito img');
+		
+			var kiritoBg		= $('#baruun img');
 			var kiritoBgW		= 450;
 			var kiritoBgH		= 1400;
 			var kiritoFrame		= 0;
 			var kiritoFrameW	= 0;
 			var kiritoFrameH	= 0;
 			var kiritoMaxframe	= 57;
-			var kiritoBgAnime	= null; //setInterval
+			var kiritoBgAnime	= null; 
 			
-			// キリトアスナ背景アニメーション実行用
+			
 			var animeStartTop	= kiritoBg.offset().top - _windowHeight + 600;
 			var animeStartFlg	= false;
 			
 
-		// 初期表示の処理 *****************************************************************************
+		//  *****************************************************************************
 			
 			if( $('html').hasClass('loaded') ) {
-				//effect読み込み
+			
 				setTimeout(function(){
 					_effectApp.root.init(function(){});
 				},10)
 				intLoaded();
 				
 			} else {
-				// 初期ロード
+				
 				noScroll();
 				int();
 			}
 			
 		
-		// BGM選択ボタン ******************************************************************************
 		
-			// loading時BGM選択ボタン
 			$('#sound_select .sound a').click(function(e) {
 				e.preventDefault();
 				showTop($('#sound_select'));
 			});
 			
-			// グロナビ内のBGM選択ボタン
+		
 			$('#sound_select .sound a, .navigation .sound a').click(function(e) {
 				e.preventDefault();
 				soundStatusChange($(this));
 			});
 			
 
-		// ページ内リンクボタン ***********************************************************************
-
-			// ページ内リンクの移動先調整
+		
 			$('.p_scroll').click(function(e) {
 				e.preventDefault();
 				var id		= $(this).data('id');
@@ -453,9 +429,7 @@
 			});	
 
 
-		// 動画 ***************************************************************************************
-		
-			// 動画スキップボタン
+	
 			$('#btn_skip').click(function(e) {
 				e.preventDefault();
 				if( ytSkipFlag == true ) { return; }
@@ -467,25 +441,25 @@
 				ytPlayer.stopVideo();
 	
 				if( $.cookie('sound_switch_flg') == undefined ) {
-					$('#movie').fadeOut(intervalTime,function(){
+					$('#taniltsuulga_video').fadeOut(intervalTime,function(){
 						$('#sound_select').fadeIn(intervalTime);
 					});
 				} else {
-					showTop($('#movie'));
+					showTop($('#taniltsuulga_video'));
 				}
 			});
 			
-			// 動画見るボタン
+		
 			$('#btn_movie').click(function(e) {
 				noScroll();
 				clearInterval(bgmVolume);
 				soundBGMstop();
 				$('#overlay').fadeIn(intervalTime,function(){
-					$('#movie').fadeIn(intervalTime);
+					$('#taniltsuulga_video').fadeIn(intervalTime);
 				});
 			});
 			
-			// 動画閉じるボタン
+		
 			$('#btn_movie_close').click(function(e) {
 				returnScroll();
 				clearInterval(bgmVolume);
@@ -495,15 +469,13 @@
 					soundBGMplay();
 				}
 				ytPlayer.stopVideo();
-				$('#movie').fadeOut(intervalTime,function(){
+				$('#taniltsuulga_video').fadeOut(intervalTime,function(){
 					$('#overlay').fadeOut(intervalTime);
 				});
 			});
 
 
-		// prologue ***********************************************************************************
-		
-			// prologue読むボタン
+	
 			$('#prologue .read').click(function(e) {
 				e.preventDefault();
 				$('#prologue_text').css({ 'visibility' : 'visible' });
@@ -513,7 +485,7 @@
 				} );
 			});
 	
-			// prologue閉じるボタン
+		
 			$('.close_top, .close_bottom').click(function(e) {
 				e.preventDefault();
 				$('#prologue_text #scrollbox').animate({ opacity: 0 }, 200, '', function() {
@@ -524,35 +496,33 @@
 				});
 			});
 			
-			// epilogue読むボタン
-			$('#epilogue .read').click(function(e) {
+	
+			$('#tuhai .read').click(function(e) {
 				e.preventDefault();
-				$('#epilogue_text').css({ 'visibility' : 'visible' });
-				$('#epilogue_text').animate({ opacity: 1 }, 200, '', function() {
+				$('#tuhai_text').css({ 'visibility' : 'visible' });
+				$('#tuhai_text').animate({ opacity: 1 }, 200, '', function() {
 					$('html,body').css({ 'overflow' : 'hidden' });
-					$('#epilogue_text #scrollbox2').animate({ opacity: 1 }, 400);
+					$('#tuhai_text #scrollbox2').animate({ opacity: 1 }, 400);
 				} );
 			});
 	
-			// epilogue閉じるボタン
+		
 			$('.close_top, .close_bottom').click(function(e) {
 				e.preventDefault();
-				$('#epilogue_text #scrollbox2').animate({ opacity: 0 }, 200, '', function() {
+				$('#tuhai_text #scrollbox2').animate({ opacity: 0 }, 200, '', function() {
 					$('html,body').css({ 'overflow' : '' });
-					$('#epilogue_text').animate({ opacity: 0 }, 200, '', function() {
-						$('#epilogue_text').css({ 'visibility' : 'hidden' });
+					$('#tuhai_text').animate({ opacity: 0 }, 200, '', function() {
+						$('#tuhai_text').css({ 'visibility' : 'hidden' });
 					} );
 				});
 			});
 			
-			// カスタムスクロール
+			
 			var $scrollbar = $("#scrollbox,#scrollbox2");
 			$scrollbar.tinyscrollbar({ trackSize: 714 });
 	
 	
-		// 背景 ***************************************************************************************
-			
-			// アスナ背景
+		
 			function asunaBgAnimationStart() {
 				if( tablethone == true ) {
 					asunaBg.hide();
@@ -575,7 +545,7 @@
 				}, 1000/12 );
 			}
 			
-			// キリト背景
+	
 			function kiritoBgAnimationStart() {
 				if( tablethone == true ) {
 					kiritoBg.hide();
@@ -598,7 +568,7 @@
 				}, 1000/12 );
 			}
 			
-			// パララックス キリトアスナ背景開始
+			
 			_window.scroll(function(e) {
 				var scrollTop = _window.scrollTop();
 				if( _para1Top < scrollTop ) {
@@ -626,7 +596,6 @@
 	});	
 	
 	
-	// イベントフォト
 	$( '.swipebox' ).swipebox();
 
 })();

@@ -1,13 +1,13 @@
 var Common = {};
 (function(root){
 	if(('sessionStorage' in root) && ('localStorage' in root)){
-		// hasValue
+
 		var hasStorage = sessionStorage.getItem('loading');
 		var loadClass = hasStorage ? 'loaded' : '';
 		
 		root.sessionStorage.setItem('loading', new Date());
 
-		// addClass
+
 		var html = document.getElementsByTagName('html')[0],
 		val =	html.getAttribute('class');
 		if(val){
@@ -24,15 +24,13 @@ var Common = {};
 }(window));
 
 
-// tablet判定 ******************************************************************************
+
 
 	var tablethone = false;
 	if ( ( navigator.userAgent.indexOf('iPad') != -1 ) )
 	{
 		tablethone = true;
 	}
-
-// twiiter *********************************************************************************
 
 	window.twttr = (function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0],

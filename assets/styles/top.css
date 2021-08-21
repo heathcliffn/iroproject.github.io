@@ -13,7 +13,7 @@
 #taniltsuulga_video #btn_skip { text-align: right; margin-bottom: 20px; }
 #taniltsuulga_video #btn_movie_close { display: block; text-align: left; text-indent: -99999px; overflow: hidden; position: relative; width: 42px; height: 36px; overflow: hidden; padding: 0; margin: 0 0 20px auto; display: none; }
 #taniltsuulga_video #btn_movie_close a { display: block; width: 42px; height: 36px; overflow: hidden; }
-#taniltsuulga_video #btn_movie_close a:before, #movie #btn_movie_close a:after { content: ''; position: absolute; width: 54px; height: 4px; background: #fff; left: -6px; top: 16px; }
+#taniltsuulga_video #btn_movie_close a:before, #taniltsuulga_video #btn_movie_close a:after { content: ''; position: absolute; width: 54px; height: 4px; background: #fff; left: -6px; top: 16px; }
 #taniltsuulga_video #btn_movie_close a:before { -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
 #taniltsuulga_video #btn_movie_close a:after { -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
 
