@@ -68,7 +68,7 @@ body .inner { width: 960px; margin: 0 auto; position: relative; padding: 40px 0;
 #header .mainvisual, #header_top .mainvisual { width: 1000px; margin: 0 auto; }
 #header .mainvisual img, #header_top .mainvisual img { margin: 0 -500px; }
 #header .logo, #header_top .logo { position: absolute; left: 0px; top: 0px; }
-#header .logo_ibm, #header_top .logo_ibm { position: absolute; right: 10px; top: 10px; }
+#header .sponser_logo, #header_top .sponser_logo { position: absolute; right: 10px; top: 10px; }
 #header .copy, #header_top .copy { position: absolute; right: 6px; bottom: 6px; }
 
 #header { position: relative; background: #022841; border-bottom: 1px solid #ffffff; }
