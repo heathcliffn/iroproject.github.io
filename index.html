@@ -26,8 +26,16 @@
 	<script type="text/javascript" src="assets/scripts/pc/libs/velocity.js"></script>
 	<script type="text/javascript" src="assets/scripts/pc/common.js"></script>
 	<script type="text/javascript" src="assets/scripts/pc/top.js"></script>
-	
-	
+	<script>
+ function disableClick(){
+ document.onclick=function(event){
+ if (event.button == 2) {
+ alert('Right Click Message');
+ return false;
+ }
+ }
+ }
+ </script>
 </head>
 
 
