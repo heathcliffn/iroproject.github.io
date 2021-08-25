@@ -179,7 +179,32 @@
 			}
 		},1000/120);
 	}
-
+function soundBGMup() {
+		bgm.up();
+		bgmVolume = setInterval(function(){
+			if( bgm.readyState == 4 ) {
+				bgmVolumeNum += 0.01;
+				if( bgmVolumeNum > 1 ) {
+					clearInterval(bgmVolume);
+					bgmVolumeNum = 0.75;
+				}
+				bgm.volume = bgmVolumeNum;
+			}
+		},1000/60);
+	}
+	function soundBGMlow() {
+		bgm.low();
+		bgmVolume = setInterval(function(){
+			if( bgm.readyState == 4 ) {
+				bgmVolumeNum += 0.01;
+				if( bgmVolumeNum > 1 ) {
+					clearInterval(bgmVolume);
+					bgmVolumeNum = 50;
+				}
+				bgm.volume = bgmVolumeNum;
+			}
+		},1000/60);
+	}
 
 	function imgPreload() {
 		var count = 0;
