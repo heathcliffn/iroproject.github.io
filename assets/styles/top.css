@@ -10,7 +10,8 @@
 #play {cursor:  pointer}
 
 #taniltsuulga_video { width: 925px; height: 580px; z-index: 10004; }
-#taniltsuulga_video #btn_skip { text-align: right; margin-bottom: 20px; }
+#taniltsuulga_video #btn_page  { text-align: right; margin-bottom: 20px; }
+#taniltsuulga_video #btn_skip  { text-align: right; margin-bottom: 20px; }
 #taniltsuulga_video #btn_movie_close { display: block; text-align: left; text-indent: -99999px; overflow: hidden; position: relative; width: 42px; height: 36px; overflow: hidden; padding: 0; margin: 0 0 20px auto; display: none; }
 #taniltsuulga_video #btn_movie_close a { display: block; width: 42px; height: 36px; overflow: hidden; }
 #taniltsuulga_video #btn_movie_close a:before, #taniltsuulga_video #btn_movie_close a:after { content: ''; position: absolute; width: 54px; height: 4px; background: #fff; left: -6px; top: 16px; }
