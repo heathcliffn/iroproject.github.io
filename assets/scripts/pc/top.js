@@ -172,7 +172,7 @@
 				bgmVolumeNum -= 0.01;
 				if( bgmVolumeNum < 0 ) {
 					clearInterval(bgmVolume);
-					bgmVolumeNum = 0;
+					bgmVolumeNum = 0.5;
 					//bgm.currentTime = 0;
 					bgm.pause();
 				}
