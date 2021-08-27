@@ -127,12 +127,20 @@
 		}
 	
 	}
+	
 
 	function noScroll(){
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).on(scroll_event,function(e){e.preventDefault();});
 	}
-
+    function up(){
+		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
+		$(document).up(scroll_event,function(e){e.preventDefault();});
+	}
+	function down(){
+		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
+		$(document).down(scroll_event,function(e){e.preventDefault();});
+	}
 	function returnScroll(){
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).off(scroll_event);
@@ -145,7 +153,6 @@
 			if( bgm.readyState == 4 ) {
 				bgmOnReadyFlg = true;
 				clearInterval(bgmOnReady);
-			
 			}
 		},1);
 	}
@@ -156,7 +163,7 @@
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum += 0.01;
-				if( bgmVolumeNum > 1 ) {
+				if( bgmVolumeNum > 10 ) {
 					clearInterval(bgmVolume);
 					bgmVolumeNum = 1;
 				}
@@ -171,7 +178,7 @@
 				bgmVolumeNum -= 0.01;
 				if( bgmVolumeNum < 0 ) {
 					clearInterval(bgmVolume);
-					bgmVolumeNum = 0.5;
+					bgmVolumeNum = 0;
 					//bgm.currentTime = 0;
 					bgm.pause();
 				}
