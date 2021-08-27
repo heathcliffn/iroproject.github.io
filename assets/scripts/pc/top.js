@@ -172,32 +172,7 @@
 			}
 		},1000/60);
 	}
-
-	function soundBGMup() {
-		bgm.up();
-		bgmVolume = setInterval(function(){
-			if( bgm.readyState == 4 ) {
-				bgmVolumeNum -= 0.01;
-				if( bgmVolumeNum > 0.75 ) {
-					clearInterval(bgmVolume);
-					bgmVolumeNum = 0.75;
-				}
-				bgm.volume = bgmVolumeNum;
-			}
-		},1000/60);
-	}
-
-	function soundBGMdown() {
-		bgm.down();
-				if( bgmVolumeNum > 0.50 ) {
-					bgmVolumeNum -= 0.01;
-					bgmVolumeNum = 0.50;
-					else{
-					bgmVolumeNum = 0.50;
-				}
-				bgm.volume = bgmVolumeNum;
-			}
-		},1000/60
+0
 
 	function soundBGMstop() {
 		bgmVolume = setInterval(function(){
