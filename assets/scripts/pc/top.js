@@ -133,11 +133,11 @@
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).on(scroll_event,function(e){e.preventDefault();});
 	}
-    function up(){
+    function Upscroll(){
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).up(scroll_event,function(e){e.preventDefault();});
 	}
-	function down(){
+	function Downscroll(){
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).down(scroll_event,function(e){e.preventDefault();});
 	}
@@ -165,12 +165,42 @@
 				bgmVolumeNum += 0.01;
 				if( bgmVolumeNum > 1 ) {
 					clearInterval(bgmVolume);
-					bgmVolumeNum = 0;
+					bgmVolumeNum = 1;
 				}
 				bgm.volume = bgmVolumeNum;
 			}
 		},1000/60);
 	}
+		function soundBGMup() {
+		bgm.up();
+		bgmVolume = setInterval(function(){
+			if( bgm.readyState == 4 ) {
+				bgmVolumeNum += 0.01;
+				if( bgmVolumeNum > 0.75 ) {
+					clearInterval(bgmVolume);
+					bgmVolumeNum = 0.75;
+				}
+				bgm.volume = bgmVolumeNum;
+			}
+		},1000/60);
+	}
+
+	function soundBGMdown() {
+		bgm.down();
+		bgmVolume = setInterval(function(){
+			if( bgm.readyState == 4 ) {
+				bgmVolumeNum += 0.01;
+				if( bgmVolumeNum > 0.50 ) {
+					clearInterval(bgmVolume);
+					bgmVolumeNum = 0.50;
+				}
+				bgm.volume = bgmVolumeNum;
+			}
+		},1000/60);
+	}
+
+
+
 
 	function soundBGMstop() {
 		bgmVolume = setInterval(function(){
