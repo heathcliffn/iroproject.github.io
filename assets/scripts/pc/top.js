@@ -157,7 +157,7 @@
 				bgmVolumeNum += 0.01;
 				if( bgmVolumeNum > 1 ) {
 					clearInterval(bgmVolume);
-					bgmVolumeNum = 5;
+					bgmVolumeNum = 1;
 				}
 				bgm.volume = bgmVolumeNum;
 			}
