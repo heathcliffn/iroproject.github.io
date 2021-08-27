@@ -157,7 +157,7 @@
 				bgmVolumeNum += 0.01;
 				if( bgmVolumeNum > 1 ) {
 					clearInterval(bgmVolume);
-					bgmVolumeNum = 1;
+					bgmVolumeNum = 5;
 				}
 				bgm.volume = bgmVolumeNum;
 			}
@@ -179,6 +179,7 @@
 			}
 		},1000/120);
 	}
+
 
 
 	function imgPreload() {
