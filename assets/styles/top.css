@@ -182,7 +182,7 @@
 #contents { position: relative; background: url(/assets/images/top/bg_main.png) repeat-y center top; }
 #contents h2 { margin-bottom: 40px; text-align: center; }
 #contents h3 { text-align: center; }
-#top_nav .volume, #fix_nav .volume { position: absolute; right: -80px; top: 28px; overflow: hidden; *zoom: 1; padding-left: 20px; border-left: 1px solid #fff; }
+#top_nav .volume, { position: absolute; right: -80px; top: 28px; overflow: hidden; *zoom: 1; padding-left: 20px; border-left: 1px solid #fff; }
 #top_nav .volume dt, #top_nav .volume dd, #top_nav .volume li, #fix_nav .volume dt, #fix_nav .volume dd, #fix_nav .volume li { float: left; height: 21px; }
 #top_nav .volume dt img, #top_nav .volume dd img, #top_nav .volume li img, #fix_nav .volume dt img, #fix_nav .volume dd img, #fix_nav .volume li img { vertical-align: top; }
 #top_nav .volume li, #fix_nav .volume li { margin-left: 13px; display: none; }
