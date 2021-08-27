@@ -177,7 +177,7 @@
 #top_nav .sound dt, #top_nav .sound dd, #top_nav .sound li, #fix_nav .sound dt, #fix_nav .sound dd, #fix_nav .sound li { float: left; height: 21px; }
 #top_nav .sound dt img, #top_nav .sound dd img, #top_nav .sound li img, #fix_nav .sound dt img, #fix_nav .sound dd img, #fix_nav .sound li img { vertical-align: top; }
 #top_nav .sound li, #fix_nav .sound li { margin-left: 13px; display: none; }
-#top_nav .sound a, #fix_nav .sound a { display: block; line-height: 100; height: 21px; }
+#top_nav .sound a, #fix_nav .sound a { display: block; line-height: 200; height: 21px; }
 #top_nav .sound .active, #fix_nav .sound .active { display: block; }
 #top_nav .volume, #fix_nav .volume { position: absolute; right: -80px; top: 28px; overflow: hidden; *zoom: 1; padding-left: 20px; border-left: 0px solid #fff; }
 #top_nav .volume dt, #top_nav .volume dd, #top_nav .volume li, #fix_nav .volume dt, #fix_nav .volume dd, #fix_nav .volume li { float: left; height: 21px; }
