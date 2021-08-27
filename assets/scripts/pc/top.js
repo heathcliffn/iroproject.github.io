@@ -164,7 +164,6 @@
 			}
 		},1000/60);
 	}
-0
 
 	function soundBGMstop() {
 		bgmVolume = setInterval(function(){
