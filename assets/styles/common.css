@@ -59,7 +59,7 @@ body a { display: inline-block; color: #fff; text-decoration: underline; -moz-tr
 body a:hover { text-decoration: none; }
 body a.hover:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity: 0.6; }
 body a.current, body a.active:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
-body .inner { width: 960px; margin: 0 auto; position: relative; padding: 40px 0; }
+body .inner { width: 1200px; margin: 0 auto; position: relative; padding: 40px 0; }
 
 ::-moz-selection { background: #0cc9d4; text-shadow: none; }
 
@@ -75,7 +75,7 @@ body .inner { width: 960px; margin: 0 auto; position: relative; padding: 40px 0;
 
 .navigation { position: relative; z-index: 7000; }
 .navigation .inner { padding: 0px; }
-.navigation .nav { padding: 18px 0 15px; overflow: hidden; *zoom: 1; }
+.navigation .nav { padding: 18px  15px; overflow: hidden; *zoom: 1; }
 .navigation .nav li { float: left; }
 .navigation .nav li + li { margin-left: 22px; }
 .navigation .nav li a { position: relative; }
