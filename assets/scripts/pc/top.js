@@ -55,7 +55,7 @@
 
 	function onYouTubeIframeAPIReady() {
 		ytPlayer = new YT.Player(
-			'youtube', // 埋め込む場所の指定
+			'youtube', 
 			{
 				width		: 925,
 				height		: 520,
@@ -132,11 +132,20 @@
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).on(scroll_event,function(e){e.preventDefault();});
 	}
+	function noScroll(){
+		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
+		$(document).up(scroll_event,function(e){e.preventDefault();});
+	}
+	function noScroll(){
+		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
+		$(document).down(scroll_event,function(e){e.preventDefault();});
+	}
 
 	function returnScroll(){
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).off(scroll_event);
 	}
+
 
 	function soundBGMload() {
 		bgm.load();
@@ -144,7 +153,7 @@
 			if( bgm.readyState == 4 ) {
 				bgmOnReadyFlg = true;
 				clearInterval(bgmOnReady);
-				//console.log('bgm読み込み完了');
+			
 			}
 		},1);
 	}
@@ -163,7 +172,34 @@
 			}
 		},1000/60);
 	}
-	
+
+	function soundBGMup() {
+		bgm.up();
+		bgmVolume = setInterval(function(){
+			if( bgm.readyState == 4 ) {
+				bgmVolumeNum += 0.01;
+				if( bgmVolumeNum > 1 ) {
+					clearInterval(bgmVolume);
+					bgmVolumeNum = 1;
+				}
+				bgm.volume = bgmVolumeNum;
+			}
+		},1000/60);
+	}
+
+	function soundBGMdown() {
+		bgm.down();
+		bgmVolume = setInterval(function(){
+			if( bgm.readyState == 4 ) {
+				bgmVolumeNum += 0.01;
+				if( bgmVolumeNum > 1 ) {
+					clearInterval(bgmVolume);
+					bgmVolumeNum = 1.5;
+				}
+				bgm.volume = bgmVolumeNum;
+			}
+		},1000/60);
+	}
 
 	function soundBGMstop() {
 		bgmVolume = setInterval(function(){
