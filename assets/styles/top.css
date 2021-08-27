@@ -8,8 +8,6 @@
 
 #loading .load, #taniltsuulga_video, #sound_select { position: fixed; left: 0px; right: 0px; top: 0px; bottom: 0px; margin: auto; text-align: center; }
 #play {cursor:  pointer}
-#up {cursor:  pointer}
-#down {cursor:  pointer}
 
 #taniltsuulga_video { width: 925px; height: 580px; z-index: 10004; }
 #taniltsuulga_video #btn_page  { text-align: right; margin-bottom: 20px; }
