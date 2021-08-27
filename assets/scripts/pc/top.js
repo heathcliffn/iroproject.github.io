@@ -9,7 +9,7 @@
 		bgm.volume		= 0;
 		bgm.loop		= true;
 	var bgmVolume		= null; // setinterval
-	var bgmVolumeNum	= 0;
+	var bgmVolumeNum	= 1;
 	var bgmOnReady		= null; // setinterval
 	var bgmOnReadyFlg	= false;
 	
