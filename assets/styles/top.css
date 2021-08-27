@@ -182,6 +182,10 @@
 #top_nav .sound a, #fix_nav .sound a { display: block; line-height: 0; height: 21px; }
 #top_nav .sound .active, #fix_nav .sound .active { display: block; }
 
+#top_nav .volume dt, #top_nav .volume dd, #top_nav .volume li, #fix_nav .volume dt, #fix_nav .volume dd, #fix_nav .volume li { float: right; height: 21px; }
+
+
+
 #contents { position: relative; background: url(/assets/images/top/bg_main.png) repeat-y center top; }
 #contents h2 { margin-bottom: 40px; text-align: center; }
 #contents h3 { text-align: center; }
