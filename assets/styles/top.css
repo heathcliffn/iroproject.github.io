@@ -173,11 +173,11 @@
 #top_nav { border-bottom: 1px solid #616364; }
 
 #top_nav .social, #fix_nav .social { right: 118px; }
-#top_nav .sound, #fix_nav .sound { position: absolute; right: -80px; top: 28px; overflow: hidden; *zoom: 1; padding-left: 20px; border-left: 100px solid #fff; }
+#top_nav .sound, #fix_nav .sound { position: absolute; right: -80px; top: 28px; overflow: hidden; *zoom: 1; padding-left: 20px; border-left: 1px solid #fff; }
 #top_nav .sound dt, #top_nav .sound dd, #top_nav .sound li, #fix_nav .sound dt, #fix_nav .sound dd, #fix_nav .sound li { float: left; height: 21px; }
 #top_nav .sound dt img, #top_nav .sound dd img, #top_nav .sound li img, #fix_nav .sound dt img, #fix_nav .sound dd img, #fix_nav .sound li img { vertical-align: top; }
 #top_nav .sound li, #fix_nav .sound li { margin-left: 13px; display: none; }
-#top_nav .sound a, #fix_nav .sound a { display: block; line-height: 0; height: 21px; }
+#top_nav .sound a, #fix_nav .sound a { display: block; line-height: 100; height: 21px; }
 #top_nav .sound .active, #fix_nav .sound .active { display: block; }
 #contents { position: relative; background: url(/assets/images/top/bg_main.png) repeat-y center top; }
 #contents h2 { margin-bottom: 40px; text-align: center; }
