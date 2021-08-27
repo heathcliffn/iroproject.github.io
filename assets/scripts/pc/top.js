@@ -176,11 +176,11 @@
 	function soundBGMup() {
 		bgm.up();
 		bgmVolume = setInterval(function(){
-			if( bgm.readyState == 4 ) {
+			if( bgm.readyState == 2.5 ) {
 				bgmVolumeNum += 0.01;
 				if( bgmVolumeNum > 1 ) {
 					clearInterval(bgmVolume);
-					bgmVolumeNum = 10.25;
+					bgmVolumeNum = 1;
 				}
 				bgm.volume = bgmVolumeNum;
 			}
@@ -190,7 +190,7 @@
 	function soundBGMdown() {
 		bgm.down();
 		bgmVolume = setInterval(function(){
-			if( bgm.readyState == 4 ) {
+			if( bgm.readyState == 2 ) {
 				bgmVolumeNum += 0.01;
 				if( bgmVolumeNum > 1 ) {
 					clearInterval(bgmVolume);
