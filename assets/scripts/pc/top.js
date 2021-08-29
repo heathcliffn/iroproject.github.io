@@ -133,14 +133,7 @@
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).on(scroll_event,function(e){e.preventDefault();});
 	}
-    function noScroll(){
-		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
-		$(document).up(scroll_event,function(e){e.preventDefault();});
-	}
-	function returnScroll(){
-		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
-		$(document).down(scroll_event,function(e){e.preventDefault();});
-	}
+	
 	function returnScroll(){
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).off(scroll_event);
@@ -190,9 +183,9 @@
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum -= 0.01;
-				if( bgmVolumeNum > 1 ) {
+				if( bgmVolumeNum > 0 ) {
 					clearInterval(bgmVolume);
-					bgmVolumeNum = 1;
+					bgmVolumeNum = 0;
 				}
 				bgm.volume = bgmVolumeNum;
 			}
