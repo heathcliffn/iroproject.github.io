@@ -164,31 +164,33 @@
 		},1000/60);
 	}
 		function soundBGMup() {
-		bgm.play();
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum -= 0.01;
-				if( bgmVolumeNum > 0.50 ) {
+				if( bgmVolumeNum < 0 ) {
 					clearInterval(bgmVolume);
-					bgmVolumeNum = 0.50;
+					bgmVolumeNum = 0;
+					//bgm.currentTime = 0;
+					bgm.pause();
 				}
 				bgm.volume = bgmVolumeNum;
 			}
-		},1000/60);
+		},1000/120);
 	}
 
 	function soundBGMdown() {
-		bgm.play();
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum -= 0.01;
-				if( bgmVolumeNum > 0 ) {
+				if( bgmVolumeNum < 0 ) {
 					clearInterval(bgmVolume);
 					bgmVolumeNum = 0;
+					//bgm.currentTime = 0;
+					bgm.pause();
 				}
 				bgm.volume = bgmVolumeNum;
 			}
-		},1000/60);
+		},1000/120);
 	}
 
 
@@ -478,6 +480,25 @@
 					showTop($('#taniltsuulga_video'));
 				}
 			});
+			$('#btn_page').click(function(e) {
+				e.preventDefault();
+				if( ytSkipFlag == true ) { return; }
+				ytSkipFlag = true;
+				
+				ytIsOpening	= false;
+				clearInterval(ytGetStatus);
+				
+				ytPlayer.stopVideo();
+	
+				if( $.cookie('sound_switch_flg') == undefined ) {
+					$('#taniltsuulga_video').fadeOut(intervalTime,function(){
+						$('#sound_select').fadeIn(intervalTime);
+					});
+				} else {
+					showTop($('#taniltsuulga_video'));
+				}
+			});
+			
 			
 		
 			$('#btn_movie').click(function(e) {
