@@ -8,7 +8,7 @@
 		bgm.src			= 'assets/bgm/sound1.mp3';
 		bgm.volume		= 0;
 		bgm.loop		= true;
-	var bgmVolume		= null; // setinterval
+	var bgmVolume		= 0.5; // setinterval
 	var bgmVolumeNum	= 0;
 	var bgmOnReady		= null; // setinterval
 	var bgmOnReadyFlg	= false;
