@@ -60,6 +60,7 @@ body a:hover { text-decoration: none; }
 body a.hover:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity: 0.6; }
 body a.current, body a.active:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 body .inner { width: 1200px; margin: 0 auto; position: relative; padding: 40px 0; }
+body .inner2 { width: 960px; margin: 0 auto; position: relative; padding: 40px 0; }
 
 ::-moz-selection { background: #0cc9d4; text-shadow: none; }
 
