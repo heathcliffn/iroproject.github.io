@@ -133,7 +133,6 @@
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).on(scroll_event,function(e){e.preventDefault();});
 	}
-	
 	function returnScroll(){
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).off(scroll_event);
@@ -165,13 +164,13 @@
 		},1000/60);
 	}
 		function soundBGMup() {
-		bgm.up();
+		bgm.play();
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum -= 0.01;
-				if( bgmVolumeNum > 1 ) {
+				if( bgmVolumeNum > 0.50 ) {
 					clearInterval(bgmVolume);
-					bgmVolumeNum = 1;
+					bgmVolumeNum = 0.50;
 				}
 				bgm.volume = bgmVolumeNum;
 			}
@@ -179,7 +178,7 @@
 	}
 
 	function soundBGMdown() {
-		bgm.down();
+		bgm.play();
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum -= 0.01;
