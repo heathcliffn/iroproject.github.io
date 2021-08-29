@@ -76,7 +76,7 @@ body .inner2 { width: 960px; margin: 0 auto; position: relative; padding: 40px 0
 
 .navigation { position: relative; z-index: 7000; }
 .navigation .inner { padding: 0px; }
-.navigation .nav { padding: 18px  15px; overflow: hidden; *zoom: 1; }
+.navigation .nav { padding: 16px  115px; overflow: hidden; *zoom: 1; }
 .navigation .nav li { float: left; }
 .navigation .nav li + li { margin-left: 22px; }
 .navigation .nav li a { position: relative; }
