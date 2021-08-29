@@ -133,11 +133,11 @@
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).on(scroll_event,function(e){e.preventDefault();});
 	}
-    function upScroll(){
+    function noScroll(){
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).up(scroll_event,function(e){e.preventDefault();});
 	}
-	function dowScroll(){
+	function returnScroll(){
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).down(scroll_event,function(e){e.preventDefault();});
 	}
