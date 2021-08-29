@@ -8,7 +8,7 @@
 		bgm.src			= 'assets/bgm/sound1.mp3';
 		bgm.volume		= 0;
 		bgm.loop		= true;
-	var bgmVolume		= 0.5; // setinterval
+	var bgmVolume		= null; // setinterval
 	var bgmVolumeNum	= 0;
 	var bgmOnReady		= null; // setinterval
 	var bgmOnReadyFlg	= false;
@@ -133,11 +133,11 @@
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).on(scroll_event,function(e){e.preventDefault();});
 	}
-    function Upscroll(){
+    function upScroll(){
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).up(scroll_event,function(e){e.preventDefault();});
 	}
-	function Downscroll(){
+	function dowScroll(){
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).down(scroll_event,function(e){e.preventDefault();});
 	}
@@ -176,9 +176,9 @@
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum -= 0.01;
-				if( bgmVolumeNum > 0.75 ) {
+				if( bgmVolumeNum > 1 ) {
 					clearInterval(bgmVolume);
-					bgmVolumeNum = 0.75;
+					bgmVolumeNum = 1;
 				}
 				bgm.volume = bgmVolumeNum;
 			}
@@ -190,9 +190,9 @@
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum -= 0.01;
-				if( bgmVolumeNum > 0.50 ) {
+				if( bgmVolumeNum > 1 ) {
 					clearInterval(bgmVolume);
-					bgmVolumeNum = 0.50;
+					bgmVolumeNum = 1;
 				}
 				bgm.volume = bgmVolumeNum;
 			}
