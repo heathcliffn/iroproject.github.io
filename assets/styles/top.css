@@ -37,7 +37,7 @@
 #header_top .mainvisual .layer1 { position: absolute; width: 2000px; left: 50%; top: 0px; margin-left: -1001px; }
 #header_top .mainvisual .layer2 { position: absolute; left: 50%; top: 23px; margin-left: -734px; }
 #header_top .mainvisual .layer3 { position: absolute; width: 2000px; left: 50%; top: 0px; margin-left: -1001px; }
-#header_top .mainvisual .layer4 { position: absolute; left: 50%; top: 224px; margin-left: -265px; }
+#header_top .mainvisual .layer4 { position: absolute; left: 50%; top: 440px; margin-left: -395px; }
 #header_top .mainvisual .layer5 { position: absolute; width: 2000px; left: 50%; top: 0px; margin-left: -1001px; }
 #header_top .logo { top: 110px; left: 50%; margin-left: -2px; }
 #header_top .text1 {position: absolute; left: 50%; margin-left: 25px; width: 265px; text-align: center;}
@@ -86,11 +86,11 @@
 #header_top.start #btn_movie, #header_top.start #btn_englishpage { -moz-transition-delay: 1520ms; -o-transition-delay: 1520ms; -webkit-transition-delay: 1520ms; transition-delay: 1520ms; }
 #header_top.start .sponser_logo, #header_top.start .copy { -moz-transition-delay: 2000ms; -o-transition-delay: 2000ms; -webkit-transition-delay: 2000ms; transition-delay: 2000ms; }
 
-@-moz-keyframes header_cogu { from { -moz-transform: translateY(10px); transform: translateY(10px); }
+@-moz-keyframes header_cogu { from { -moz-transform: translateY(30px); transform: translateY(30px); }
   to { -moz-transform: translateY(0px); transform: translateY(0px); } }
-@-webkit-keyframes header_cogu { from { -webkit-transform: translateY(10px); transform: translateY(10px); }
+@-webkit-keyframes header_cogu { from { -webkit-transform: translateY(30px); transform: translateY(30px); }
   to { -webkit-transform: translateY(0px); transform: translateY(0px); } }
-@keyframes header_cogu { from { -moz-transform: translateY(10px); -ms-transform: translateY(10px); -webkit-transform: translateY(10px); transform: translateY(10px); }
+@keyframes header_cogu { from { -moz-transform: translateY(30px); -ms-transform: translateY(30px); -webkit-transform: translateY(30px); transform: translateY(30px); }
   to { -moz-transform: translateY(0px); -ms-transform: translateY(0px); -webkit-transform: translateY(0px); transform: translateY(0px); } }
 @-moz-keyframes header_text_line1 { 0% { width: 0px; left: 5px; right: inherit; }
   18% { width: 255px; left: 5px; right: inherit; }
