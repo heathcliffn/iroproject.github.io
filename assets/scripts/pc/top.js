@@ -12,7 +12,6 @@
 	var bgmVolumeNum	= 0;
 	var bgmOnReady		= null; // setinterval
 	var bgmOnReadyFlg	= false;
-	var x = document.getElementById("bgm").controller;
 	// youtube
 	var ytOnReadyFlg	= false;
 	var ytSkipFlag		= false;
