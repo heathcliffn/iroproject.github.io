@@ -480,25 +480,7 @@
 					showTop($('#taniltsuulga_video'));
 				}
 			});
-			$('#btn_page').click(function(e) {
-				e.preventDefault();
-				if( ytSkipFlag == true ) { return; }
-				ytSkipFlag = true;
-				
-				ytIsOpening	= false;
-				clearInterval(ytGetStatus);
-				
-				ytPlayer.stopVideo();
-	
-				if( $.cookie('sound_switch_flg') == undefined ) {
-					$('#taniltsuulga_video').fadeOut(intervalTime,function(){
-						$('#sound_select').fadeIn(intervalTime);
-					});
-				} else {
-					showTop($('#taniltsuulga_video'));
-				}
-			});
-			
+		
 			
 		
 			$('#btn_movie').click(function(e) {
