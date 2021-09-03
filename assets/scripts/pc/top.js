@@ -164,15 +164,14 @@
 		},1000/60);
 	}
 		function soundBGMup() {
-			bgm.play();
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum -= 0.01;
-				if( bgmVolumeNum < 0 ) {
+				if( bgmVolumeNum < 0.75 ) {
 					clearInterval(bgmVolume);
-					bgmVolumeNum = 0;
+					bgmVolumeNum = 0.75;
 					//bgm.currentTime = 0;
-					bgm.pause();
+					bgm.play();
 				}
 				bgm.volume = bgmVolumeNum;
 			}
@@ -180,7 +179,6 @@
 	}
 
 	function soundBGMdown() {
-		bgm.play();
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum -= 0.01;
@@ -188,7 +186,7 @@
 					clearInterval(bgmVolume);
 					bgmVolumeNum = 0.5;
 					//bgm.currentTime = 0;
-					bgm.pause();
+					bgm.play();
 				}
 				bgm.volume = bgmVolumeNum;
 			}
@@ -201,11 +199,11 @@
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum -= 0.01;
-				if( bgmVolumeNum < 0.5 ) {
+				if( bgmVolumeNum < 0 ) {
 					clearInterval(bgmVolume);
-					bgmVolumeNum = 0.5;
+					bgmVolumeNum = 0;
 					//bgm.currentTime = 0;
-					bgm.play();
+					bgm.pause();
 				}
 				bgm.volume = bgmVolumeNum;
 			}
