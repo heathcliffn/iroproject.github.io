@@ -164,7 +164,7 @@
 		},1000/60);
 	}
 		function soundBGMup() {
-			bgm.up();
+			bgm.play();
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum -= 0.01;
@@ -180,7 +180,7 @@
 	}
 
 	function soundBGMdown() {
-		bgm.down();
+		bgm.play();
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum -= 0.01;
@@ -201,9 +201,9 @@
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum -= 0.01;
-				if( bgmVolumeNum < 1 ) {
+				if( bgmVolumeNum < 0 ) {
 					clearInterval(bgmVolume);
-					bgmVolumeNum = 1;
+					bgmVolumeNum = 0;
 					//bgm.currentTime = 0;
 					bgm.pause();
 				}
