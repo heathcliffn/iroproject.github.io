@@ -163,6 +163,7 @@
 		},1000/60);
 	}
 		function soundBGMup() {
+			bgm.up();
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum -= 0.01;
@@ -178,6 +179,7 @@
 	}
 
 	function soundBGMdown() {
+		bgm.down();
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum -= 0.01;
