@@ -205,7 +205,7 @@
 					clearInterval(bgmVolume);
 					bgmVolumeNum = 0.5;
 					//bgm.currentTime = 0;
-					bgm.pause();
+					bgm.play();
 				}
 				bgm.volume = bgmVolumeNum;
 			}
