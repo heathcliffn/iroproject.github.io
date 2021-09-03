@@ -135,9 +135,7 @@
 	function returnScroll(){
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).off(scroll_event);
-		$(document).up(scroll_event);
-		$(document).down(scroll_event);
-	}
+		}
 	
 
 
