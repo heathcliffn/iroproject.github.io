@@ -71,7 +71,6 @@
 					
 						imgPreload();
 
-						console.log('youtube読み込み完了');
 					},
 					'onStateChange': function onPlayerStateChange(event) {
 						var ytStatus = event.data;
@@ -135,6 +134,14 @@
 	function returnScroll(){
 		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 		$(document).off(scroll_event);
+		}
+	function returnScroll(){
+		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
+		$(document).up(scroll_event);
+		}
+	function returnScroll(){
+		var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
+		$(document).down(scroll_event);
 		}
 	
 
