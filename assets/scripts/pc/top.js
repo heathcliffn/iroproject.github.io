@@ -175,7 +175,7 @@
 				}
 				bgm.volume = bgmVolumeNum;
 			}
-		},1000/120);
+		},1000/60);
 	}
 
 	function soundBGMdown() {
@@ -193,7 +193,6 @@
 			}
 		},1000/120);
 	}
-
 
 
 
