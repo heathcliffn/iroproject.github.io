@@ -201,9 +201,9 @@
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum -= 0.01;
-				if( bgmVolumeNum < 0 ) {
+				if( bgmVolumeNum < 0.5 ) {
 					clearInterval(bgmVolume);
-					bgmVolumeNum = 0;
+					bgmVolumeNum = 0.5;
 					//bgm.currentTime = 0;
 					bgm.pause();
 				}
