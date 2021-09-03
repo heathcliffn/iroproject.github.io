@@ -1,0 +1,267 @@
+@charset "UTF-8";
+#loading { position: fixed; width: 100%; height: 100%; background: #000; z-index: 10010; }
+#loading .load { margin-left: -60px; margin-top: -120px; width: 120px; height: 120px; z-index: 10010; }
+#loading .load .obj { margin-top: -40px; position: relative; width: 120px; height: 120px; overflow: hidden; }
+#loading .load .obj img { position: absolute; left: 0px; top: 0px; }
+#loading .load p { margin-top: 28px; line-height: 0; }
+#loading .load p img { margin-right: -14px; }
+
+.step_section { position: fixed; left: 50%; top: 50%; margin: auto; text-align: center; }
+
+#movie { margin-left: -320px; margin-top: -180px; width: 640px; height: 360px; z-index: 10006; }
+#movie #btn_skip { text-align: right; margin: -90px 30px 20px auto; }
+#movie #btn_movie_close { display: block; text-align: left; text-indent: -9999px; overflow: hidden; position: relative; width: 42px; height: 36px; overflow: hidden; padding: 0; margin: -90px 30px 20px auto; display: none; }
+#movie #btn_movie_close a { display: block; width: 42px; height: 36px; overflow: hidden; }
+#movie #btn_movie_close a:before, #movie #btn_movie_close a:after { content: ''; position: absolute; width: 54px; height: 4px; background: #fff; left: -6px; top: 16px; }
+#movie #btn_movie_close a:before { -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+#movie #btn_movie_close a:after { -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+#overlay { position: fixed; width: 100%; height: 100%; background: #000; z-index: 10000; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85); opacity: 0.85; }
+
+#header_top { position: relative; z-index: 2; background: #000; padding: 35px 0 20px; }
+#header_top .mainvisual { position: relative; width: 100%; height: 1131px; background: url(/vrmmo-project/assets/images/sp/top/main_visual.jpg) no-repeat top center; }
+#header_top .mainvisual .layer { position: absolute; left: 0px; top: 0px; }
+#header_top .mainvisual .layer4 { left: 260px; top: 480px; }
+#header_top .logo { position: absolute; top: 108px; left: 0; width: 100%; text-align: center; }
+#header_top .text1, #header_top .text2, #header_top #btn_movie, #header_top #btn_englishpage { position: absolute; left: 0; width: 100%; text-align: center; }
+#header_top .text1 { top: 680px; }
+#header_top .text2 { top: 755px; }
+#header_top #btn_movie { top: 880px; }
+#header_top #btn_englishpage { top: 971px; }
+#header_top .logo_ibm { position: absolute; right: 20px; bottom: 72px; }
+#header_top .copy { position: absolute; left: 12px; bottom: 90px; }
+#header_top .scroll { position: absolute; width: 100%; bottom: 50px; }
+#header_top .scroll a { display: block; text-align: left; text-indent: -9999px; overflow: hidden; width: 226px; height: 53px; margin: 0 auto; background: url(/vrmmo-project/assets/images/sp/nav/nav_scroll.png) no-repeat left top; }
+#header_top:after { content: ''; position: absolute; left: 0px; bottom: 0px; width: 100%; height: 50px; background: url(/vrmmo-project/assets/images/sp/nav/nav_bg3.png) no-repeat left bottom; }
+
+#header_top { overflow: hidden; }
+#header_top .mainvisual .layer1 { visibility: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+#header_top .mainvisual .layer2 { visibility: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -moz-transform: translateY(10px); -ms-transform: translateY(10px); -webkit-transform: translateY(10px); transform: translateY(10px); -moz-transition: all 1800ms cubic-bezier(0.23, 1, 0.32, 1); -o-transition: all 1800ms cubic-bezier(0.23, 1, 0.32, 1); -webkit-transition: all 1800ms cubic-bezier(0.23, 1, 0.32, 1); transition: all 1800ms cubic-bezier(0.23, 1, 0.32, 1); }
+#header_top .mainvisual .layer3 { visibility: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -moz-transition: all 5000ms cubic-bezier(0.23, 1, 0.32, 1); -o-transition: all 5000ms cubic-bezier(0.23, 1, 0.32, 1); -webkit-transition: all 5000ms cubic-bezier(0.23, 1, 0.32, 1); transition: all 5000ms cubic-bezier(0.23, 1, 0.32, 1); }
+#header_top .mainvisual .layer4 { visibility: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -moz-transition: all 1800ms cubic-bezier(0.23, 1, 0.32, 1); -o-transition: all 1800ms cubic-bezier(0.23, 1, 0.32, 1); -webkit-transition: all 1800ms cubic-bezier(0.23, 1, 0.32, 1); transition: all 1800ms cubic-bezier(0.23, 1, 0.32, 1); }
+#header_top .logo, #header_top .text1, #header_top .text2, #header_top #btn_movie { visibility: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -moz-transform: translateY(40px); -ms-transform: translateY(40px); -webkit-transform: translateY(40px); transform: translateY(40px); -moz-transition: all 1000ms cubic-bezier(0.23, 1, 0.32, 1); -o-transition: all 1000ms cubic-bezier(0.23, 1, 0.32, 1); -webkit-transition: all 1000ms cubic-bezier(0.23, 1, 0.32, 1); transition: all 1000ms cubic-bezier(0.23, 1, 0.32, 1); }
+#header_top .text1 .wrap1 { position: relative; }
+#header_top .text1 .wrap1, #header_top .text1 .wrap2 { display: inline-block; }
+#header_top .text1 span:before, #header_top .text1 span:after { content: ''; position: absolute; background: #fff; }
+#header_top .text1 span:before { width: 0px; height: 2px; }
+#header_top .text1 span:after { width: 2px; height: 0px; }
+#header_top .text1 .wrap1:before { top: 12px; left: 12px; }
+#header_top .text1 .wrap1:after { top: 12px; right: 12px; }
+#header_top .text1 .wrap2:before { bottom: 12px; right: 12px; }
+#header_top .text1 .wrap2:after { bottom: 12px; left: 12px; }
+#header_top .logo_ibm, #header_top .copy { visibility: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -moz-transition: all 1200ms cubic-bezier(0.23, 1, 0.32, 1); -o-transition: all 1200ms cubic-bezier(0.23, 1, 0.32, 1); -webkit-transition: all 1200ms cubic-bezier(0.23, 1, 0.32, 1); transition: all 1200ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+#header_top.start .mainvisual .layer1, #header_top.start .mainvisual .layer2, #header_top.start .mainvisual .layer3, #header_top.start .mainvisual .layer4, #header_top.start .mainvisual .layer5 { visibility: visible; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; -moz-transform: translateY(0px); -ms-transform: translateY(0px); -webkit-transform: translateY(0px); transform: translateY(0px); }
+#header_top.start .logo, #header_top.start .text1, #header_top.start .text2, #header_top.start #btn_movie, #header_top.start #btn_englishpage, #header_top.start .logo_ibm, #header_top.start .copy { visibility: visible; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; -moz-transform: translateY(0px); -ms-transform: translateY(0px); -webkit-transform: translateY(0px); transform: translateY(0px); }
+#header_top.start .mainvisual .layer2 { -moz-transition-delay: 0ms; -o-transition-delay: 0ms; -webkit-transition-delay: 0ms; transition-delay: 0ms; }
+#header_top.start .mainvisual .layer3 { -moz-transition-delay: 400ms; -o-transition-delay: 400ms; -webkit-transition-delay: 400ms; transition-delay: 400ms; }
+#header_top.start .mainvisual .layer4 { -moz-transition-delay: 400ms; -o-transition-delay: 400ms; -webkit-transition-delay: 400ms; transition-delay: 400ms; -moz-animation: header_cogu 2s ease 400ms infinite alternate; -webkit-animation: header_cogu 2s ease 400ms infinite alternate; animation: header_cogu 2s ease 400ms infinite alternate; }
+#header_top.start .logo { -moz-transition-delay: 480ms; -o-transition-delay: 480ms; -webkit-transition-delay: 480ms; transition-delay: 480ms; }
+#header_top.start .text1 { -moz-transition-delay: 960ms; -o-transition-delay: 960ms; -webkit-transition-delay: 960ms; transition-delay: 960ms; }
+#header_top.start .text1 .wrap1:before { -moz-animation: header_text_line1 4s ease 1040ms infinite; -webkit-animation: header_text_line1 4s ease 1040ms infinite; animation: header_text_line1 4s ease 1040ms infinite; }
+#header_top.start .text1 .wrap1:after { -moz-animation: header_text_line2 4s ease 1040ms infinite; -webkit-animation: header_text_line2 4s ease 1040ms infinite; animation: header_text_line2 4s ease 1040ms infinite; }
+#header_top.start .text1 .wrap2:before { -moz-animation: header_text_line3 4s ease 1040ms infinite; -webkit-animation: header_text_line3 4s ease 1040ms infinite; animation: header_text_line3 4s ease 1040ms infinite; }
+#header_top.start .text1 .wrap2:after { -moz-animation: header_text_line4 4s ease 1040ms infinite; -webkit-animation: header_text_line4 4s ease 1040ms infinite; animation: header_text_line4 4s ease 1040ms infinite; }
+#header_top.start .text2 { -moz-transition-delay: 1120ms; -o-transition-delay: 1120ms; -webkit-transition-delay: 1120ms; transition-delay: 1120ms; }
+#header_top.start #btn_movie, #header_top.start #btn_englishpage { -moz-transition-delay: 1520ms; -o-transition-delay: 1520ms; -webkit-transition-delay: 1520ms; transition-delay: 1520ms; }
+#header_top.start .logo_ibm, #header_top.start .copy { -moz-transition-delay: 2000ms; -o-transition-delay: 2000ms; -webkit-transition-delay: 2000ms; transition-delay: 2000ms; }
+
+@-moz-keyframes header_cogu { from { -moz-transform: translateY(10px); transform: translateY(10px); }
+  to { -moz-transform: translateY(0px); transform: translateY(0px); } }
+@-webkit-keyframes header_cogu { from { -webkit-transform: translateY(10px); transform: translateY(10px); }
+  to { -webkit-transform: translateY(0px); transform: translateY(0px); } }
+@keyframes header_cogu { from { -moz-transform: translateY(10px); -ms-transform: translateY(10px); -webkit-transform: translateY(10px); transform: translateY(10px); }
+  to { -moz-transform: translateY(0px); -ms-transform: translateY(0px); -webkit-transform: translateY(0px); transform: translateY(0px); } }
+@-moz-keyframes header_text_line1 { 0% { width: 0px; left: 12px; right: inherit; }
+  18% { width: 356px; left: 12px; right: inherit; }
+  18.1% { width: 356px; left: inherit; right: 12px; }
+  80% { width: 356px; left: inherit; right: 12px; }
+  98% { width: 0px; left: inherit; right: 12px; }
+  100% { width: 0px; left: inherit; right: 12px; } }
+@-webkit-keyframes header_text_line1 { 0% { width: 0px; left: 12px; right: inherit; }
+  18% { width: 356px; left: 12px; right: inherit; }
+  18.1% { width: 356px; left: inherit; right: 12px; }
+  80% { width: 356px; left: inherit; right: 12px; }
+  98% { width: 0px; left: inherit; right: 12px; }
+  100% { width: 0px; left: inherit; right: 12px; } }
+@keyframes header_text_line1 { 0% { width: 0px; left: 12px; right: inherit; }
+  18% { width: 356px; left: 12px; right: inherit; }
+  18.1% { width: 356px; left: inherit; right: 12px; }
+  80% { width: 356px; left: inherit; right: 12px; }
+  98% { width: 0px; left: inherit; right: 12px; }
+  100% { width: 0px; left: inherit; right: 12px; } }
+@-moz-keyframes header_text_line2 { 0% { height: 0px; top: 12px; bottom: inherit; }
+  18% { height: 75px; top: 12px; bottom: inherit; }
+  18.1% { height: 75px; top: inherit; bottom: 12px; }
+  80% { height: 75px; top: inherit; bottom: 12px; }
+  98% { height: 0px; top: inherit; bottom: 12px; }
+  100% { height: 0px; top: inherit; bottom: 12px; } }
+@-webkit-keyframes header_text_line2 { 0% { height: 0px; top: 12px; bottom: inherit; }
+  18% { height: 75px; top: 12px; bottom: inherit; }
+  18.1% { height: 75px; top: inherit; bottom: 12px; }
+  80% { height: 75px; top: inherit; bottom: 12px; }
+  98% { height: 0px; top: inherit; bottom: 12px; }
+  100% { height: 0px; top: inherit; bottom: 12px; } }
+@keyframes header_text_line2 { 0% { height: 0px; top: 12px; bottom: inherit; }
+  18% { height: 75px; top: 12px; bottom: inherit; }
+  18.1% { height: 75px; top: inherit; bottom: 12px; }
+  80% { height: 75px; top: inherit; bottom: 12px; }
+  98% { height: 0px; top: inherit; bottom: 12px; }
+  100% { height: 0px; top: inherit; bottom: 12px; } }
+@-moz-keyframes header_text_line3 { 0% { width: 0px; left: inherit; right: 12px; }
+  18% { width: 356px; left: inherit; right: 12px; }
+  18.1% { width: 356px; left: 12px; right: inherit; }
+  80% { width: 356px; left: 12px; right: inherit; }
+  98% { width: 0px; left: 12px; right: inherit; }
+  100% { width: 0px; left: 12px; right: inherit; } }
+@-webkit-keyframes header_text_line3 { 0% { width: 0px; left: inherit; right: 12px; }
+  18% { width: 356px; left: inherit; right: 12px; }
+  18.1% { width: 356px; left: 12px; right: inherit; }
+  80% { width: 356px; left: 12px; right: inherit; }
+  98% { width: 0px; left: 12px; right: inherit; }
+  100% { width: 0px; left: 12px; right: inherit; } }
+@keyframes header_text_line3 { 0% { width: 0px; left: inherit; right: 12px; }
+  18% { width: 356px; left: inherit; right: 12px; }
+  18.1% { width: 356px; left: 12px; right: inherit; }
+  80% { width: 356px; left: 12px; right: inherit; }
+  98% { width: 0px; left: 12px; right: inherit; }
+  100% { width: 0px; left: 12px; right: inherit; } }
+@-moz-keyframes header_text_line4 { 0% { height: 0px; top: inherit; bottom: 12px; }
+  18% { height: 75px; top: inherit; bottom: 12px; }
+  18.1% { height: 75px; top: 12px; bottom: inherit; }
+  80% { height: 75px; top: 12px; bottom: inherit; }
+  98% { height: 0px; top: 12px; bottom: inherit; }
+  100% { height: 0px; top: 12px; bottom: inherit; } }
+@-webkit-keyframes header_text_line4 { 0% { height: 0px; top: inherit; bottom: 12px; }
+  18% { height: 75px; top: inherit; bottom: 12px; }
+  18.1% { height: 75px; top: 12px; bottom: inherit; }
+  80% { height: 75px; top: 12px; bottom: inherit; }
+  98% { height: 0px; top: 12px; bottom: inherit; }
+  100% { height: 0px; top: 12px; bottom: inherit; } }
+@keyframes header_text_line4 { 0% { height: 0px; top: inherit; bottom: 12px; }
+  18% { height: 75px; top: inherit; bottom: 12px; }
+  18.1% { height: 75px; top: 12px; bottom: inherit; }
+  80% { height: 75px; top: 12px; bottom: inherit; }
+  98% { height: 0px; top: 12px; bottom: inherit; }
+  100% { height: 0px; top: 12px; bottom: inherit; } }
+
+#special { margin-top: -36px;  padding: 0; background: url(/vrmmo-project/assets/images/sp/bg1.jpg) repeat-y center -2px; }
+#special .inner { padding: 100px 0 20px; font-size: 22px; font-size: 1rem; background : -webkit-gradient(linear, left top, left bottom, from(rgba(0,122,195,0.5)), to(rgba(104,108,221,0.5))); background : -webkit-linear-gradient(left, rgba(0,122,195,0.5), rgba(104,108,221,0.5)); background : linear-gradient(to right, rgba(0,122,195,0.5), rgba(104,108,221,0.5)); }
+#special h2 { margin-bottom: 50px; text-align: center; }
+#special .mugendai { padding: 0 30px 15px; text-align:center; }
+#special .mugendai a { color: #9ff; }
+#special .previous { width: 100%; height: auto; box-sizing: border-box; padding: 30px; }
+#special .previous .post { background-color: #000; box-sizing: border-box; position: relative; overflow: hidden; }
+#special .previous .post a { width: 100%; height: 100%; display: block; position: absolute; z-index:1; top: 0; left: 0; }
+#special .previous .post .clm { width: 44%; height: auto; position: relative; float: left; }
+#special .previous .post .clm .clm-img { width: 100%; height: auto; }
+#special .previous .post .clm .mugendai-logo { width: 60px; height: auto; position:absolute; top: -10px; right:0; }
+#special .previous .post .clm .clm-num { position: absolute; bottom:3.3%; left:3.3%; font-size: 1.5em; color: #fff; font-weight: bold; }
+#special .previous .post .summary { width: 54%; height: auto; float: right; }
+#special .previous .post .summary h3 { padding: 10px; line-height:1.25em; text-align:left; font-weight: bold; color: #fff; }
+#special .previous .post .summary .entry-date { padding: 0 10px 10px 0; color: #fff; font-size: 0.84em; text-align: right; font-family: Century Gothic, sans-serif; }
+#special .previous .comming { width: 100%; height: auto; background-color: rgba(255,255,255,0.33); }
+#special .previous .comming p { color: #fff; text-align: center; padding: 20% 0; }
+#special .prevline { width: 100%; height: 13px; border:none; background-image: url(/vrmmo-project/assets/images/pc/top/line_quadruple.png); background-repeat: repeat-x; background-position: bottom left; clear: both; }
+
+#contents { position: relative; z-index: 1; padding: 0 30px 200px; background: url(/vrmmo-project/assets/images/sp/bg1.jpg) repeat-y center -2px; }
+#contents h2 { margin-bottom: 50px; text-align: center; }
+#contents h3 { text-align: center; }
+
+#introduction { padding: 100px 0; }
+#introduction h3 { margin-bottom: 34px; text-align: center; }
+#introduction p { font-size: 22px; font-size: 1rem; background: url(/vrmmo-project/assets/images/sp/space.png); }
+
+#prologue { margin: 160px -30px; padding: 75px 0; text-align: center; background: url(/vrmmo-project/assets/images/sp/top/prologue_bg3.png) no-repeat left center #fff; position: relative; }
+#prologue:before, #prologue:after { content: ''; width: 100%; height: 159px; position: absolute; left: 0px; }
+#prologue:before { top: -158px; background: url(/vrmmo-project/assets/images/sp/top/prologue_bg1.png) no-repeat left top; }
+#prologue:after { bottom: -158px; background: url(/vrmmo-project/assets/images/sp/top/prologue_bg2.png) no-repeat left top; }
+#prologue .read { margin-top: -60px; }
+
+#outline { padding: 100px 0; text-align: center; font-size: 22px; font-size: 1rem; }
+#outline dl { margin: 50px auto 80px; font-size: 28px; font-size: 1.27273rem; }
+#outline dl dt { margin-bottom: 26px; color: #0fbde2; font-weight: bold; }
+#outline dl dd { margin-bottom: 50px; }
+#outline small { display: block; font-size: 20px; font-size: 0.90909rem; padding: 4px 0 0 1em; text-indent: -1em; line-height: 1.6em; }
+#outline span { font-size: 20px; font-size: 0.90909rem; display: inline-block; padding: 0 4px; }
+#outline .unit { margin: 0 auto; position: relative; z-index: 2000; padding: 8px; border: 1px solid #015c8a; background-color: rgba(0, 77, 65, 0.7); }
+#outline .unit:before, #outline .unit:after { content: ''; position: absolute; width: 11px; }
+#outline .unit:before { right: -11px; top: 30px; height: 183px; background: url(/vrmmo-project/assets/images/sp/top/outline_img1.png) no-repeat right top; }
+#outline .unit:after { left: -11px; bottom: 28px; height: 116px; background: url(/vrmmo-project/assets/images/sp/top/outline_img2.png) no-repeat left bottom; }
+#outline .box { position: relative; padding: 54px 24px 80px; border: 1px solid #005e71; background: url(/vrmmo-project/assets/images/sp/bg2.jpg) repeat-y top center; }
+#outline .text { margin-bottom: 38px; font-size: 22px; font-size: 1rem; }
+
+#about { padding: 100px 0 0; }
+#about h2 + h3{margin:30px auto 30px;}
+#about h3 { margin:80px auto 30px; font-size: 26px; font-size: 1.18182rem; font-weight: bold; }
+#about p { font-size: 20px; font-size: 0.90909rem; background: url(/vrmmo-project/assets/images/sp/space.png); }
+
+#credit { margin-bottom: 30px; padding: 0 30px; }
+#credit .unit { display: inline-block; vertical-align: top; }
+#credit .unit + .unit { margin-bottom: 60px; }
+#credit .unit + .unit dl { width: 50%; float: left; }
+#credit .unit + .unit dl dd { padding-left: 5em; }
+#credit .unit + .unit .unit2 { width: 100%; margin-top: 50px; padding-top: 20px; border-top: 2px solid #fff; }
+#credit .unit + .unit .unit2 dd { padding-left: 9em !important; }
+#credit .unit h3 { margin-top: 50px; margin-bottom: 20px; text-align: center; font-size: 24px; font-size: 1.09091rem; border-bottom: 2px solid #fff; }
+#credit .unit dl { font-size: 20px; font-size: 0.90909rem; padding-bottom: 4px; }
+#credit .unit dl dt { float: left; }
+#credit .unit dl dd { padding-left: 8em; }
+
+#line1, #line2 { margin: 0 -30px -60px; }
+
+#prologue_text { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 9100; background: #fff; color: #000; visibility: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+#prologue_text #scrollbox { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; position: relative; width: 100%; height: 100%; overflow-y: scroll; }
+#prologue_text .inner { padding: 150px 0; position: initial; width: 520px; }
+#prologue_text h2 { margin-bottom: 50px; text-align: center; }
+#prologue_text p { font-size: 24px; font-size: 1.09091rem; line-height: 2.2em; font-family: "游明朝","YuMincho","Hiragino Mincho ProN","Hiragino Mincho Pro","ＭＳ 明朝",serif; background: url(/vrmmo-project/assets/images/sp/space.png); }
+#prologue_text .close_top { position: absolute; right: 0px; top: 0px; overflow: hidden; padding: 0; }
+#prologue_text .close_top a { position: relative; padding: 22px; background: #000; }
+#prologue_text .close_top a span { display: block; text-align: left; text-indent: -9999px; overflow: hidden; position: relative; display: block; width: 42px; height: 36px; overflow: hidden; }
+#prologue_text .close_top a span:before, #prologue_text .close_top a span:after { content: ''; position: absolute; width: 54px; height: 4px; background: #fff; left: -6px; top: 16px; }
+#prologue_text .close_top a span:before { -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+#prologue_text .close_top a span:after { -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+#prologue_text .close_bottom { margin: 120px auto 0; text-align: center; }
+
+
+#epilogue { margin: 160px -30px; padding: 75px 0; text-align: center; background: url(/vrmmo-project/assets/images/sp/top/epilogue_bg3.png) no-repeat right center #fff; position: relative; }
+#epilogue:before, #epilogue:after { content: ''; width: 100%; height: 159px; position: absolute; left: 0px; }
+#epilogue:before { top: -158px; background: url(/vrmmo-project/assets/images/sp/top/prologue_bg1.png) no-repeat left top; }
+#epilogue:after { bottom: -158px; background: url(/vrmmo-project/assets/images/sp/top/prologue_bg2.png) no-repeat left top; }
+#epilogue .read { margin-top: -60px; }
+
+#epilogue_text { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 9100; background: #fff; color: #000; visibility: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+#epilogue_text #scrollbox2 { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; position: relative; width: 100%; height: 100%; overflow-y: scroll; }
+#epilogue_text .inner { padding: 150px 0; position: initial; width: 520px; }
+#epilogue_text h2 { margin-bottom: 50px; text-align: center; }
+#epilogue_text p { font-size: 24px; margin:2em auto; font-size: 1.09091rem; line-height: 2.2em; font-family: "游明朝","YuMincho","Hiragino Mincho ProN","Hiragino Mincho Pro","ＭＳ 明朝",serif; background: url(/vrmmo-project/assets/images/sp/space.png); }
+#epilogue_text .close_top { position: absolute; right: 0px; top: 0px; overflow: hidden; padding: 0; }
+#epilogue_text .close_top a { position: relative; padding: 22px; background: #000; }
+#epilogue_text .close_top a span { display: block; text-align: left; text-indent: -9999px; overflow: hidden; position: relative; display: block; width: 42px; height: 36px; overflow: hidden; }
+#epilogue_text .close_top a span:before, #epilogue_text .close_top a span:after { content: ''; position: absolute; width: 54px; height: 4px; background: #fff; left: -6px; top: 16px; }
+#epilogue_text .close_top a span:before { -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+#epilogue_text .close_top a span:after { -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+#epilogue_text .close_bottom { margin: 120px auto 0; text-align: center; }
+
+#photo { padding: 100px 0 50px; margin: -50px -30px 0; background-image:url(../../images/sp/top/photo_bg_event.png), url(../../images/sp/top/photo_bg_photo.png); background-repeat:no-repeat; background-position:top left, bottom right;}
+#photo .swipebox_li{ text-align:center; margin:30px auto;}
+#photo .swipebox_li li{width:250px; margin:10px; display:inline-block;}
+#photo .swipebox_li li img{width:100%; height:auto;}
+#voice {padding-top: 100px;margin-top: -100px;}
+#voice .twitter_box{width:520px; margin:0 auto;}
+#about .movie_block .block_left{ width:485px; margin:0 auto;}
+#about .about_ibm{ background-color:#00253d; margin:0 -30px; padding:40px 30px; text-align:center;}
+#about .about_ibm h3{margin:0 auto;}
+#about .about_ibm .ibm_logo{ margin: 60px auto 40px; text-align:center;}
+#about .about_ibm p{ text-align:left;}
+#outline h2{ font-size:26px;}
+#outline h3{ margin:20px auto;}
+#outline p{ font-size:20px;}
+#outline .chara_kirito{ position:relative; padding-bottom:50px;}
+#outline .chara_kirito h4{margin-left:-80px;}
+#outline .chara_kirito p{margin:20px 40px 0 180px; text-align:left; min-height: 340px;}
+#outline .image_kirito{ position:absolute; top:-58px; left:0;}
+#outline .chara_asuna{ position:relative; padding-bottom:80px;}
+#outline .chara_asuna p{margin:20px 170px 20px 120px; text-align:right;}
+#outline .chara_asuna h4{margin-right:-23px; text-align:right;}
+#outline .image_asuna{ position:absolute; bottom:10px; right:0;}

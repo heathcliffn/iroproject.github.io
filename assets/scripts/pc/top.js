@@ -155,7 +155,7 @@
 		bgmVolume = setInterval(function(){
 			if( bgm.readyState == 4 ) {
 				bgmVolumeNum += 0.01;
-				if( bgmVolumeNum > 1 ) {
+				if( bgmVolumeNum > 0 ) {
 					clearInterval(bgmVolume);
 					bgmVolumeNum = 1;
 				}
