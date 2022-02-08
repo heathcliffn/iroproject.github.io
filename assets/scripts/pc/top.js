@@ -182,7 +182,7 @@
 				if( bgmVolumeNum < 0.5 ) {
 					clearInterval(bgmVolume);
 					bgmVolumeNum = 0.5;
-					//bgm.currentTime = 0;
+					bgm.currentTime = 0.2
 					bgm.play();
 				}
 				bgm.volume = bgmVolumeNum;
